@@ -1,0 +1,38 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    pesce
+Objective:  z = 42.1875 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Volume       BS   42187.50000    7812.50000          -Inf         .            -.00100        .      Time
+                                            .        50000.00000    56250.00000        .00160     109.68764 x[3]
+
+     2 Time         NU      45.00000        .               -Inf         .            -.93750        .      x[2]
+                                            .93750      45.00000       53.33333          +Inf      50.00000 Volume
+
+     3 Law          BS        .09375        .90625          -Inf         .         -450.00000        .      Time
+                                            .            1.00000         .10227     150.00000      56.25000 x[1]
+
+     4 z            BS      42.18750     -42.18750          -Inf         .           -1.00000        .      Time
+                                            .               +Inf       42.18750          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    pesce
+Objective:  z = 42.1875 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[1]         NL        .           10.00000        .           -25.00000          -Inf      50.00000 Volume
+                                           -.31250          +Inf        4.09091      10.31250      40.90909 x[2]
+
+     2 x[2]         BS       5.62500       7.50000        .          -592.50000       7.27273      40.90909 x[1]
+                                            .               +Inf        5.62500          +Inf          +Inf
+
+     3 x[3]         NL        .            4.37499        .          -217.50000          -Inf    1129.68968 Law
+                                          -5.00001          +Inf        2.50000       9.37500      29.68748 Volume
+
+End of report

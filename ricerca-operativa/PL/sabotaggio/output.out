@@ -1,0 +1,59 @@
+Problem:    sabotaggio
+Rows:       14
+Columns:    8
+Non-zeros:  26
+Status:     OPTIMAL
+Objective:  z = 73 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Capacity[1]  B             42                          58 
+     2 Capacity[2]  NU            31                          31         < eps
+     3 Capacity[3]  B             30                          40 
+     4 Capacity[4]  NU            12                          12             1 
+     5 Capacity[5]  B             61                          66 
+     6 Capacity[6]  B             37                          59 
+     7 Capacity[7]  NU            25                          25             1 
+     8 Capacity[8]  NU            36                          36             1 
+     9 ConservazioneOD
+                    NS             0            -0             =             1 
+    10 FluxConservation[3]
+                    NS             0            -0             =         < eps
+    11 FluxConservation[4]
+                    NS             0            -0             =         < eps
+    12 FluxConservation[5]
+                    NS             0            -0             =            -1 
+    13 FluxConservation[6]
+                    B              0            -0             = 
+    14 z            B             73                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1]         B             42             0               
+     2 x[2]         B             31             0               
+     3 x[3]         B             30             0               
+     4 x[4]         B             12             0               
+     5 x[5]         B             61             0               
+     6 x[6]         B             37             0               
+     7 x[7]         B             25             0               
+     8 x[8]         B             36             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

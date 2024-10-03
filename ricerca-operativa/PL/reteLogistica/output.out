@@ -1,0 +1,353 @@
+Problem:    reteLogistica
+Rows:       111
+Columns:    100
+Non-zeros:  370
+Status:     OPTIMAL
+Objective:  z = 56160 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Capacity[1,1]
+                    B              0                          50 
+     2 Capacity[1,2]
+                    B              0                          50 
+     3 Capacity[1,3]
+                    NU            50                          50          -128 
+     4 Capacity[1,4]
+                    B              5                          50 
+     5 Capacity[1,5]
+                    B              0                          50 
+     6 Capacity[1,6]
+                    B              0                          50 
+     7 Capacity[1,7]
+                    B              5                          50 
+     8 Capacity[1,8]
+                    B              0                          50 
+     9 Capacity[1,9]
+                    B              0                          50 
+    10 Capacity[1,10]
+                    B              0                          50 
+    11 Capacity[2,1]
+                    B              0                          50 
+    12 Capacity[2,2]
+                    B              0                          50 
+    13 Capacity[2,3]
+                    B             45                          50 
+    14 Capacity[2,4]
+                    B             30                          50 
+    15 Capacity[2,5]
+                    B              0                          50 
+    16 Capacity[2,6]
+                    B              0                          50 
+    17 Capacity[2,7]
+                    B              0                          50 
+    18 Capacity[2,8]
+                    B              0                          50 
+    19 Capacity[2,9]
+                    B              0                          50 
+    20 Capacity[2,10]
+                    B              0                          50 
+    21 Capacity[3,1]
+                    B              0                          50 
+    22 Capacity[3,2]
+                    B              0                          50 
+    23 Capacity[3,3]
+                    B              0                          50 
+    24 Capacity[3,4]
+                    B              0                          50 
+    25 Capacity[3,5]
+                    B              0                          50 
+    26 Capacity[3,6]
+                    B              0                          50 
+    27 Capacity[3,7]
+                    B              0                          50 
+    28 Capacity[3,8]
+                    B              0                          50 
+    29 Capacity[3,9]
+                    B              0                          50 
+    30 Capacity[3,10]
+                    B              0                          50 
+    31 Capacity[4,1]
+                    B              0                          50 
+    32 Capacity[4,2]
+                    B              0                          50 
+    33 Capacity[4,3]
+                    B              0                          50 
+    34 Capacity[4,4]
+                    B              0                          50 
+    35 Capacity[4,5]
+                    B              0                          50 
+    36 Capacity[4,6]
+                    B              0                          50 
+    37 Capacity[4,7]
+                    B              0                          50 
+    38 Capacity[4,8]
+                    B              0                          50 
+    39 Capacity[4,9]
+                    B              0                          50 
+    40 Capacity[4,10]
+                    B              0                          50 
+    41 Capacity[5,1]
+                    B              0                          50 
+    42 Capacity[5,2]
+                    B              0                          50 
+    43 Capacity[5,3]
+                    B              0                          50 
+    44 Capacity[5,4]
+                    B              0                          50 
+    45 Capacity[5,5]
+                    B              0                          50 
+    46 Capacity[5,6]
+                    B              0                          50 
+    47 Capacity[5,7]
+                    B             10                          50 
+    48 Capacity[5,8]
+                    B              5                          50 
+    49 Capacity[5,9]
+                    B              0                          50 
+    50 Capacity[5,10]
+                    B              0                          50 
+    51 Capacity[6,1]
+                    B              0                          50 
+    52 Capacity[6,2]
+                    B              0                          50 
+    53 Capacity[6,3]
+                    B              0                          50 
+    54 Capacity[6,4]
+                    B             45                          50 
+    55 Capacity[6,5]
+                    B              0                          50 
+    56 Capacity[6,6]
+                    B              0                          50 
+    57 Capacity[6,7]
+                    B              0                          50 
+    58 Capacity[6,8]
+                    B              0                          50 
+    59 Capacity[6,9]
+                    B             45                          50 
+    60 Capacity[6,10]
+                    B              0                          50 
+    61 Capacity[7,1]
+                    B              0                          50 
+    62 Capacity[7,2]
+                    B              0                          50 
+    63 Capacity[7,3]
+                    B              0                          50 
+    64 Capacity[7,4]
+                    B              0                          50 
+    65 Capacity[7,5]
+                    B              0                          50 
+    66 Capacity[7,6]
+                    B              0                          50 
+    67 Capacity[7,7]
+                    B              0                          50 
+    68 Capacity[7,8]
+                    B              0                          50 
+    69 Capacity[7,9]
+                    B              0                          50 
+    70 Capacity[7,10]
+                    B              0                          50 
+    71 Capacity[8,1]
+                    B              0                          50 
+    72 Capacity[8,2]
+                    B              0                          50 
+    73 Capacity[8,3]
+                    B              0                          50 
+    74 Capacity[8,4]
+                    B              0                          50 
+    75 Capacity[8,5]
+                    B              0                          50 
+    76 Capacity[8,6]
+                    B              0                          50 
+    77 Capacity[8,7]
+                    B              0                          50 
+    78 Capacity[8,8]
+                    B              0                          50 
+    79 Capacity[8,9]
+                    B              0                          50 
+    80 Capacity[8,10]
+                    B              0                          50 
+    81 Capacity[9,1]
+                    B              0                          50 
+    82 Capacity[9,2]
+                    B              0                          50 
+    83 Capacity[9,3]
+                    B              0                          50 
+    84 Capacity[9,4]
+                    B              0                          50 
+    85 Capacity[9,5]
+                    B              0                          50 
+    86 Capacity[9,6]
+                    B              0                          50 
+    87 Capacity[9,7]
+                    B              0                          50 
+    88 Capacity[9,8]
+                    B              0                          50 
+    89 Capacity[9,9]
+                    B              0                          50 
+    90 Capacity[9,10]
+                    B              0                          50 
+    91 Capacity[10,1]
+                    B              0                          50 
+    92 Capacity[10,2]
+                    B              0                          50 
+    93 Capacity[10,3]
+                    B              0                          50 
+    94 Capacity[10,4]
+                    B              0                          50 
+    95 Capacity[10,5]
+                    B              0                          50 
+    96 Capacity[10,6]
+                    B              0                          50 
+    97 Capacity[10,7]
+                    B              0                          50 
+    98 Capacity[10,8]
+                    NU            50                          50           -32 
+    99 Capacity[10,9]
+                    B             30                          50 
+   100 Capacity[10,10]
+                    B              0                          50 
+   101 FluxConservation[1]
+                    NS           -60           -60             =          -432 
+   102 FluxConservation[2]
+                    NS           -75           -75             =          -392 
+   103 FluxConservation[3]
+                    NS            95            95             =          -200 
+   104 FluxConservation[4]
+                    NS            80            80             =            48 
+   105 FluxConservation[5]
+                    NS           -15           -15             =          -120 
+   106 FluxConservation[6]
+                    NS           -90           -90             =           -72 
+   107 FluxConservation[7]
+                    NS            15            15             =           128 
+   108 FluxConservation[8]
+                    NS            55            55             =           120 
+   109 FluxConservation[9]
+                    NS            75            75             =            96 
+   110 FluxConservation[10]
+                    B            -80           -80             = 
+   111 z            B          56160                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1]       NL             0             0                       < eps
+     2 x[1,2]       NL             0             0                         160 
+     3 x[1,3]       B             50             0               
+     4 x[1,4]       B              5             0               
+     5 x[1,5]       NL             0             0                         216 
+     6 x[1,6]       NL             0             0                         216 
+     7 x[1,7]       B              5             0               
+     8 x[1,8]       NL             0             0                         120 
+     9 x[1,9]       NL             0             0                         152 
+    10 x[1,10]      NL             0             0                         104 
+    11 x[2,1]       NL             0             0                         240 
+    12 x[2,2]       NL             0             0                       < eps
+    13 x[2,3]       B             45             0               
+    14 x[2,4]       B             30             0               
+    15 x[2,5]       NL             0             0                         224 
+    16 x[2,6]       NL             0             0                         240 
+    17 x[2,7]       NL             0             0                         120 
+    18 x[2,8]       NL             0             0                          88 
+    19 x[2,9]       NL             0             0                          24 
+    20 x[2,10]      NL             0             0                          72 
+    21 x[3,1]       NL             0             0                         336 
+    22 x[3,2]       NL             0             0                         384 
+    23 x[3,3]       NL             0             0                       < eps
+    24 x[3,4]       NL             0             0                         216 
+    25 x[3,5]       NL             0             0                         440 
+    26 x[3,6]       NL             0             0                         440 
+    27 x[3,7]       NL             0             0                         192 
+    28 x[3,8]       NL             0             0                         208 
+    29 x[3,9]       NL             0             0                         216 
+    30 x[3,10]      NL             0             0                         360 
+    31 x[4,1]       NL             0             0                         960 
+    32 x[4,2]       NL             0             0                         880 
+    33 x[4,3]       NL             0             0                         712 
+    34 x[4,4]       NL             0             0                       < eps
+    35 x[4,5]       NL             0             0                         360 
+    36 x[4,6]       NL             0             0                         240 
+    37 x[4,7]       NL             0             0                         112 
+    38 x[4,8]       NL             0             0                         136 
+    39 x[4,9]       NL             0             0                         152 
+    40 x[4,10]      NL             0             0                         224 
+    41 x[5,1]       NL             0             0                         840 
+    42 x[5,2]       NL             0             0                         768 
+    43 x[5,3]       NL             0             0                         600 
+    44 x[5,4]       NL             0             0                          24 
+    45 x[5,5]       NL             0             0                       < eps
+    46 x[5,6]       NL             0             0                         104 
+    47 x[5,7]       B             10             0               
+    48 x[5,8]       B              5             0               
+    49 x[5,9]       NL             0             0                           8 
+    50 x[5,10]      NL             0             0                          24 
+    51 x[6,1]       NL             0             0                         936 
+    52 x[6,2]       NL             0             0                         880 
+    53 x[6,3]       NL             0             0                         696 
+    54 x[6,4]       B             45             0               
+    55 x[6,5]       NL             0             0                         200 
+    56 x[6,6]       NL             0             0                       < eps
+    57 x[6,7]       NL             0             0                          56 
+    58 x[6,8]       NL             0             0                          56 
+    59 x[6,9]       B             45             0               
+    60 x[6,10]      NL             0             0                         136 
+    61 x[7,1]       NL             0             0                        1120 
+    62 x[7,2]       NL             0             0                        1160 
+    63 x[7,3]       NL             0             0                         848 
+    64 x[7,4]       NL             0             0                         272 
+    65 x[7,5]       NL             0             0                         496 
+    66 x[7,6]       NL             0             0                         456 
+    67 x[7,7]       NL             0             0                       < eps
+    68 x[7,8]       NL             0             0                         112 
+    69 x[7,9]       NL             0             0                         144 
+    70 x[7,10]      NL             0             0                         272 
+    71 x[8,1]       NL             0             0                        1224 
+    72 x[8,2]       NL             0             0                        1112 
+    73 x[8,3]       NL             0             0                         848 
+    74 x[8,4]       NL             0             0                         280 
+    75 x[8,5]       NL             0             0                         480 
+    76 x[8,6]       NL             0             0                         440 
+    77 x[8,7]       NL             0             0                          96 
+    78 x[8,8]       NL             0             0                       < eps
+    79 x[8,9]       NL             0             0                          96 
+    80 x[8,10]      NL             0             0                         208 
+    81 x[9,1]       NL             0             0                        1208 
+    82 x[9,2]       NL             0             0                        1000 
+    83 x[9,3]       NL             0             0                         808 
+    84 x[9,4]       NL             0             0                         248 
+    85 x[9,5]       NL             0             0                         440 
+    86 x[9,6]       NL             0             0                         336 
+    87 x[9,7]       NL             0             0                          80 
+    88 x[9,8]       NL             0             0                          48 
+    89 x[9,9]       NL             0             0                       < eps
+    90 x[9,10]      NL             0             0                         192 
+    91 x[10,1]      NL             0             0                         968 
+    92 x[10,2]      NL             0             0                         856 
+    93 x[10,3]      NL             0             0                         760 
+    94 x[10,4]      NL             0             0                         128 
+    95 x[10,5]      NL             0             0                         264 
+    96 x[10,6]      NL             0             0                         280 
+    97 x[10,7]      NL             0             0                          16 
+    98 x[10,8]      B             50             0               
+    99 x[10,9]      B             30             0               
+   100 x[10,10]     NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

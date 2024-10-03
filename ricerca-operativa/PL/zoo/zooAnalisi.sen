@@ -1,0 +1,144 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    zoo
+Objective:  z1 = 1527.866667 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 FabGlobale[1]
+                    NS      21.60000        .           21.60000           -Inf          -Inf    1527.86667
+                                            .           21.60000      114.04667          +Inf    1527.86667 Fabbisogno[1]
+
+     2 FabGlobale[2]
+                    NS      10.00000        .           10.00000           -Inf          -Inf    1527.86667
+                                            .           10.00000       14.98000          +Inf    1527.86667 Fabbisogno[2]
+
+     3 FabGlobale[3]
+                    NS      29.30000        .           29.30000           -Inf          -Inf    1527.86667
+                                            .           29.30000       96.03333          +Inf    1527.86667 Fabbisogno[3]
+
+     4 FabGlobale[4]
+                    NS      81.70000        .           81.70000           -Inf          -Inf    1527.86667
+                                            .           81.70000      145.80667          +Inf    1527.86667 Fabbisogno[4]
+
+     5 FabGlobale[5]
+                    NS       5.40000        .            5.40000        -.52607          -Inf    1030.07692 Fabbisogno[1]
+                                          84.00000       5.40000       17.85000          +Inf    2573.66667 Fabbisogno[2]
+
+     6 FabGlobale[6]
+                    NS       7.60000        .            7.60000      -79.06875          -Inf    1296.75000 Fabbisogno[1]
+                                           2.66667       7.60000       15.90000          +Inf    1550.00000 Fabbisogno[2]
+
+     7 FabGlobale[7]
+                    NS      15.50000        .           15.50000     -151.33333          -Inf     593.60000 Fabbisogno[3]
+                                           5.60000      15.50000       46.62500          +Inf    1702.16667 Fabbisogno[2]
+
+     8 FabGlobale[8]
+                    NS     120.90000        .          120.90000       96.00000          -Inf    1328.66667 Fabbisogno[2]
+                                           8.00000     120.90000           +Inf          +Inf          +Inf
+
+     9 Fabbisogno[1]
+                    BS      92.44667     -92.44667        .           101.30000      -2.50000    1296.75000 Fabbisogno[6]
+                                            .               +Inf       87.46667      35.00000    4763.50000 Fabbisogno[7]
+
+    10 Fabbisogno[2]
+                    BS       4.98000      -4.98000        .                +Inf     -40.00000    1328.66667 Fabbisogno[8]
+                                            .               +Inf       -4.32581       4.44444    1550.00000 Fabbisogno[6]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    zoo
+Objective:  z1 = 1527.866667 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Fabbisogno[3]
+                    BS      66.73333     -66.73333        .                +Inf      -8.00000     994.00000 Fabbisogno[8]
+                                            .               +Inf       44.60000       1.00000    1594.60000 Fabbisogno[6]
+
+    12 Fabbisogno[4]
+                    BS      64.10667     -64.10667        .                +Inf      -5.00000    1207.33333 Fabbisogno[8]
+                                            .               +Inf       29.80000        .64516    1569.22581 Fabbisogno[6]
+
+    13 Fabbisogno[5]
+                    NL        .             .             .            -5.92607     -84.00000    1030.07692 Fabbisogno[1]
+                                          84.00000          +Inf       12.45000          +Inf    2573.66667 Fabbisogno[2]
+
+    14 Fabbisogno[6]
+                    NL        .             .             .           -86.66875      -2.66667    1296.75000 Fabbisogno[1]
+                                           2.66667          +Inf        8.30000          +Inf    1550.00000 Fabbisogno[2]
+
+    15 Fabbisogno[7]
+                    NL        .             .             .          -166.83333      -5.60000     593.60000 Fabbisogno[3]
+                                           5.60000          +Inf       31.12500          +Inf    1702.16667 Fabbisogno[2]
+
+    16 Fabbisogno[8]
+                    NL        .             .             .           -24.90000      -8.00000    1328.66667 Fabbisogno[2]
+                                           8.00000          +Inf           +Inf          +Inf          +Inf
+
+    17 z1           BS    1527.86667   -1527.86667          -Inf     2573.66667      -1.00000        .      Fabbisogno[5]
+                                            .               +Inf     1527.86667          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    zoo
+Objective:  z1 = 1527.866667 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[1]         BS     108.00000       5.00000          -Inf      357.00000        .80000    1074.26667 Fabbisogno[5]
+                                            .               +Inf      108.00000          +Inf          +Inf
+
+     2 x[2]         BS     299.60000       2.00000          -Inf           +Inf        .          928.66667 Fabbisogno[8]
+                                            .               +Inf      200.00000       2.22222    1594.44444 Fabbisogno[6]
+
+     3 x[3]         BS      62.00000       3.00000          -Inf      186.50000       1.60000    1441.06667 Fabbisogno[7]
+                                            .               +Inf       62.00000          +Inf          +Inf
+
+     4 x[4]         BS      50.66667       4.00000          -Inf      106.00000       3.60000    1507.60000 Fabbisogno[6]
+                                            .               +Inf       50.66667          +Inf          +Inf
+
+     5 fabGlobale[1]
+                    BS      21.60000        .               -Inf       21.60000          -Inf          -Inf
+                                            .               +Inf       21.60000          +Inf          +Inf
+
+     6 fabGlobale[2]
+                    BS      10.00000        .               -Inf       10.00000          -Inf          -Inf
+                                            .               +Inf       10.00000          +Inf          +Inf
+
+     7 fabGlobale[3]
+                    BS      29.30000        .               -Inf       29.30000          -Inf          -Inf
+                                            .               +Inf       29.30000          +Inf          +Inf
+
+     8 fabGlobale[4]
+                    BS      81.70000        .               -Inf       81.70000          -Inf          -Inf
+                                            .               +Inf       81.70000          +Inf          +Inf
+
+     9 fabGlobale[5]
+                    BS       5.40000        .               -Inf        5.40000          -Inf          -Inf
+                                            .               +Inf        5.40000          +Inf          +Inf
+
+    10 fabGlobale[6]
+                    BS       7.60000        .               -Inf        7.60000          -Inf          -Inf
+                                            .               +Inf        7.60000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    zoo
+Objective:  z1 = 1527.866667 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 fabGlobale[7]
+                    BS      15.50000        .               -Inf       15.50000          -Inf          -Inf
+                                            .               +Inf       15.50000          +Inf          +Inf
+
+    12 fabGlobale[8]
+                    BS     120.90000        .               -Inf      120.90000          -Inf          -Inf
+                                            .               +Inf      120.90000          +Inf          +Inf
+
+End of report

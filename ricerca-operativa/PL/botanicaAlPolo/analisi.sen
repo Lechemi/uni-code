@@ -1,0 +1,164 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    botanicaAlPolo
+Objective:  z = 48892.5 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Def_Quantity[Acqua_dolce]
+                    NS        .             .             .         -4902.50000          -Inf   53795.00000 a[Acqua_dolce]
+                                          -1.00000        .                +Inf          +Inf          -Inf
+
+     2 Def_Quantity[Sali_minerali]
+                    NS        .             .             .        -67250.00000          -Inf  317892.50000 a[Sali_minerali]
+                                          -4.00000        .                +Inf          +Inf          -Inf
+
+     3 Def_Quantity[Calore]
+                    NS        .             .             .       -130000.00000          -Inf  178892.50000 a[Calore]
+                                          -1.00000        .                +Inf          +Inf          -Inf
+
+     4 Def_Quantity[Luce]
+                    NS        .             .             .       -559250.00000          -Inf  887767.50000 a[Luce]
+                                          -1.50000        .                +Inf          +Inf          -Inf
+
+     5 Def_Quantity[Vitamine]
+                    NS        .             .             .        -24162.50000          -Inf  135877.50000 a[Vitamine]
+                                          -3.60000        .                +Inf          +Inf          -Inf
+
+     6 SuperficieMin[Azalea]
+                    NL       5.00000        .            5.00000         .               -Inf   55777.50000 x[Azalea]
+                                       -1377.00000          +Inf      100.00000    1377.00000  -81922.50000 SuperficieMax[Azalea]
+
+     7 SuperficieMin[Begonia]
+                    BS     100.00000     -95.00000       5.00000         .        -2756.00000 -226707.50000 SuperficieMax[Begonia]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+     8 SuperficieMin[Carota]
+                    BS     100.00000     -95.00000       5.00000         .        -1587.60000 -109867.50000 SuperficieMax[Carota]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+     9 SuperficieMin[Datteri]
+                    NL       5.00000        .            5.00000         .               -Inf  506892.50000 x[Datteri]
+                                      -91600.00000          +Inf      100.00000   91600.00000  -8.65311e+06 SuperficieMax[Datteri]
+
+    10 SuperficieMin[Erba_cipollina]
+                    NL       5.00000        .            5.00000         .               -Inf   53275.00000 x[Erba_cipollina]
+                                        -876.50000          +Inf      100.00000     876.50000  -34375.00000 SuperficieMax[Erba_cipollina]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    botanicaAlPolo
+Objective:  z = 48892.5 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 SuperficieMin[Fragolina_di_bosco]
+                    NL       5.00000        .            5.00000         .               -Inf   48892.50000 x[Fragolina_di_bosco]
+                                            .               +Inf      100.00000        .        48892.50000 SuperficieMax[Fragolina_di_bosco]
+
+    12 SuperficieMin[Giaggiolo]
+                    BS     100.00000     -95.00000       5.00000         .        -1338.00000  -84907.50000 SuperficieMax[Giaggiolo]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+    13 SuperficieMax[Azalea]
+                    BS       5.00000      95.00000          -Inf        5.00000          -Inf          -Inf
+                                            .          100.00000      185.00000    1377.00000   55777.50000 SuperficieMin[Azalea]
+
+    14 SuperficieMax[Begonia]
+                    NU     100.00000        .               -Inf        5.00000   -2756.00000 -212927.50000 SuperficieMin[Begonia]
+                                        2756.00000     100.00000      280.00000          +Inf  544972.50000 SuperficieTot
+
+    15 SuperficieMax[Carota]
+                    NU     100.00000        .               -Inf        5.00000   -1587.60000 -101929.50000 SuperficieMin[Carota]
+                                        1587.60000     100.00000      280.00000          +Inf  334660.50000 SuperficieTot
+
+    16 SuperficieMax[Datteri]
+                    BS       5.00000      95.00000          -Inf        5.00000          -Inf          -Inf
+                                            .          100.00000      185.00000   91600.00000  506892.50000 SuperficieMin[Datteri]
+
+    17 SuperficieMax[Erba_cipollina]
+                    BS       5.00000      95.00000          -Inf        5.00000          -Inf          -Inf
+                                            .          100.00000      185.00000     876.50000   53275.00000 SuperficieMin[Erba_cipollina]
+
+    18 SuperficieMax[Fragolina_di_bosco]
+                    BS       5.00000      95.00000          -Inf        5.00000          -Inf          -Inf
+                                            .          100.00000      185.00000        .        48892.50000 SuperficieMin[Fragolina_di_bosco]
+
+    19 SuperficieMax[Giaggiolo]
+                    NU     100.00000        .               -Inf        5.00000   -1338.00000  -78217.50000 SuperficieMin[Giaggiolo]
+                                        1338.00000     100.00000      280.00000          +Inf  289732.50000 SuperficieTot
+
+    20 SuperficieTot
+                    BS     320.00000     180.00000          -Inf      225.00000   -1338.00000 -379267.50000 SuperficieMax[Giaggiolo]
+                                            .          500.00000      415.00000        .        48892.50000 SuperficieMin[Fragolina_di_bosco]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    botanicaAlPolo
+Objective:  z = 48892.5 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 z            BS   98892.50000  -98892.50000          -Inf   -8.60311e+06      -1.00000  -50000.00000 SuperficieMin[Datteri]
+                                            .               +Inf    98892.50000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    botanicaAlPolo
+Objective:  z = 48892.5 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[Azalea]    BS       5.00000    6000.00000        .             5.00000          -Inf          -Inf
+                                            .               +Inf      100.00000    7377.00000   55777.50000 SuperficieMin[Azalea]
+
+     2 x[Begonia]   BS     100.00000    4000.00000        .             5.00000    1244.00000 -226707.50000 SuperficieMax[Begonia]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+     3 x[Carota]    BS     100.00000    2000.00000        .             5.00000     412.40000 -109867.50000 SuperficieMax[Carota]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+     4 x[Datteri]   BS       5.00000   18000.00000        .             5.00000          -Inf          -Inf
+                                            .               +Inf      100.00000  109600.00000  506892.50000 SuperficieMin[Datteri]
+
+     5 x[Erba_cipollina]
+                    BS       5.00000     100.00000        .             5.00000          -Inf          -Inf
+                                            .               +Inf      100.00000     976.50000   53275.00000 SuperficieMin[Erba_cipollina]
+
+     6 x[Fragolina_di_bosco]
+                    BS       5.00000    1631.00000        .             5.00000          -Inf          -Inf
+                                            .               +Inf      100.00000    1631.00000   48892.50000 SuperficieMin[Fragolina_di_bosco]
+
+     7 x[Giaggiolo] BS     100.00000    7000.00000        .             5.00000    5662.00000  -84907.50000 SuperficieMax[Giaggiolo]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+     8 a[Acqua_dolce]
+                    BS    4902.50000      -1.00000        .          1862.50000     -87.12500 -373335.31250 SuperficieMax[Begonia]
+                                            .               +Inf     5282.50000      -1.00000   48892.50000 SuperficieMin[Fragolina_di_bosco]
+
+     9 a[Sali_minerali]
+                    BS   67250.00000      -4.00000        .         55850.00000     -26.96667  -1.49562e+06 SuperficieMax[Begonia]
+                                            .               +Inf    95750.00000      -4.00000   48892.50000 SuperficieMin[Fragolina_di_bosco]
+
+    10 a[Calore]    BS  130000.00000      -1.00000        .         82500.00000      -3.67600 -298987.50000 SuperficieMax[Giaggiolo]
+                                            .               +Inf   139500.00000      -1.00000   48892.50000 SuperficieMin[Fragolina_di_bosco]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    botanicaAlPolo
+Objective:  z = 48892.5 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 a[Luce]      BS  559250.00000      -1.50000        .        274250.00000      -1.94600 -200533.00000 SuperficieMax[Giaggiolo]
+                                            .               +Inf   578250.00000      -1.50000   48892.50000 SuperficieMin[Fragolina_di_bosco]
+
+    12 a[Vitamine]  BS   24162.50000      -3.60000        .          7062.50000     -11.03333 -130715.41667 SuperficieMax[Giaggiolo]
+                                            .               +Inf    24875.00000      -3.60000   48892.50000 SuperficieMin[Fragolina_di_bosco]
+
+End of report

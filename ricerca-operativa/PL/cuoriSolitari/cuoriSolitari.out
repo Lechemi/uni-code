@@ -1,0 +1,162 @@
+Problem:    cuoriSolitari
+Rows:       22
+Columns:    104
+Non-zeros:  312
+Status:     OPTIMAL
+Objective:  z = 197 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 MaxUomini[1] NU             1                           1             3 
+     2 MaxUomini[2] B              1                           1 
+     3 MaxUomini[3] NU             1                           1             1 
+     4 MaxUomini[4] B              1                           1 
+     5 MaxUomini[5] B              0                           1 
+     6 MaxUomini[6] B              0                           1 
+     7 MaxUomini[7] B              0                           1 
+     8 MaxUomini[8] NU             1                           1             1 
+     9 MaxUomini[9] NU             1                           1             1 
+    10 MaxUomini[10]
+                    B              0                           1 
+    11 MaxUomini[11]
+                    B              0                           1 
+    12 MaxUomini[12]
+                    NU             1                           1             2 
+    13 MaxUomini[13]
+                    B              1                           1 
+    14 MaxDonne[1]  NU             1                           1            23 
+    15 MaxDonne[2]  NU             1                           1            16 
+    16 MaxDonne[3]  NU             1                           1            28 
+    17 MaxDonne[4]  NU             1                           1            16 
+    18 MaxDonne[5]  NU             1                           1            24 
+    19 MaxDonne[6]  NU             1                           1            29 
+    20 MaxDonne[7]  NU             1                           1            19 
+    21 MaxDonne[8]  NU             1                           1            18 
+    22 z            B            197                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1]       NL             0             0             1           -13 
+     2 x[1,2]       NL             0             0             1            -4 
+     3 x[1,3]       NL             0             0             1            -8 
+     4 x[1,4]       NU             1             0             1             5 
+     5 x[1,5]       NL             0             0             1            -3 
+     6 x[1,6]       NL             0             0             1           -11 
+     7 x[1,7]       B              0             0             1 
+     8 x[1,8]       NL             0             0             1           -17 
+     9 x[2,1]       NL             0             0             1            -8 
+    10 x[2,2]       NL             0             0             1            -2 
+    11 x[2,3]       NL             0             0             1            -8 
+    12 x[2,4]       NL             0             0             1           -12 
+    13 x[2,5]       B              0             0             1 
+    14 x[2,6]       NL             0             0             1            -4 
+    15 x[2,7]       NU             1             0             1             3 
+    16 x[2,8]       NL             0             0             1           -13 
+    17 x[3,1]       NL             0             0             1            -5 
+    18 x[3,2]       NL             0             0             1            -2 
+    19 x[3,3]       NU             1             0             1             2 
+    20 x[3,4]       NL             0             0             1           -12 
+    21 x[3,5]       NL             0             0             1           -17 
+    22 x[3,6]       NL             0             0             1           -21 
+    23 x[3,7]       B              0             0             1 
+    24 x[3,8]       NL             0             0             1            -7 
+    25 x[4,1]       NL             0             0             1            -2 
+    26 x[4,2]       NU             1             0             1         < eps
+    27 x[4,3]       B              0             0             1 
+    28 x[4,4]       NL             0             0             1            -4 
+    29 x[4,5]       NL             0             0             1            -3 
+    30 x[4,6]       NL             0             0             1            -8 
+    31 x[4,7]       NL             0             0             1            -7 
+    32 x[4,8]       NL             0             0             1            -3 
+    33 x[5,1]       B              0             0             1 
+    34 x[5,2]       B              0             0             1 
+    35 x[5,3]       NL             0             0             1            -5 
+    36 x[5,4]       NL             0             0             1            -7 
+    37 x[5,5]       NL             0             0             1            -4 
+    38 x[5,6]       NL             0             0             1            -9 
+    39 x[5,7]       NL             0             0             1            -3 
+    40 x[5,8]       NL             0             0             1           -11 
+    41 x[6,1]       NL             0             0             1           -11 
+    42 x[6,2]       NL             0             0             1            -2 
+    43 x[6,3]       NL             0             0             1           -11 
+    44 x[6,4]       NL             0             0             1            -1 
+    45 x[6,5]       NL             0             0             1            -8 
+    46 x[6,6]       NL             0             0             1           -12 
+    47 x[6,7]       NL             0             0             1            -8 
+    48 x[6,8]       NL             0             0             1           -13 
+    49 x[7,1]       NL             0             0             1           -20 
+    50 x[7,2]       NL             0             0             1           -14 
+    51 x[7,3]       NL             0             0             1           -22 
+    52 x[7,4]       B              0             0             1 
+    53 x[7,5]       NL             0             0             1            -4 
+    54 x[7,6]       NL             0             0             1           -14 
+    55 x[7,7]       B              0             0             1 
+    56 x[7,8]       NL             0             0             1            -4 
+    57 x[8,1]       B              0             0             1 
+    58 x[8,2]       NL             0             0             1            -7 
+    59 x[8,3]       NL             0             0             1            -1 
+    60 x[8,4]       NL             0             0             1            -1 
+    61 x[8,5]       NU             1             0             1             1 
+    62 x[8,6]       NL             0             0             1           -12 
+    63 x[8,7]       NL             0             0             1         < eps
+    64 x[8,8]       NL             0             0             1            -9 
+    65 x[9,1]       NL             0             0             1            -4 
+    66 x[9,2]       NL             0             0             1            -5 
+    67 x[9,3]       NL             0             0             1           -12 
+    68 x[9,4]       B              0             0             1 
+    69 x[9,5]       NL             0             0             1            -6 
+    70 x[9,6]       NL             0             0             1           -12 
+    71 x[9,7]       NL             0             0             1           -10 
+    72 x[9,8]       NU             1             0             1             1 
+    73 x[10,1]      NL             0             0             1           -19 
+    74 x[10,2]      NL             0             0             1           -11 
+    75 x[10,3]      NL             0             0             1           -21 
+    76 x[10,4]      NL             0             0             1            -2 
+    77 x[10,5]      NL             0             0             1           -15 
+    78 x[10,6]      B              0             0             1 
+    79 x[10,7]      NL             0             0             1            -5 
+    80 x[10,8]      B              0             0             1 
+    81 x[11,1]      NL             0             0             1           -18 
+    82 x[11,2]      NL             0             0             1           -11 
+    83 x[11,3]      NL             0             0             1           -21 
+    84 x[11,4]      NL             0             0             1           -10 
+    85 x[11,5]      NL             0             0             1           -14 
+    86 x[11,6]      NL             0             0             1           -20 
+    87 x[11,7]      NL             0             0             1           -10 
+    88 x[11,8]      NL             0             0             1            -9 
+    89 x[12,1]      NL             0             0             1            -9 
+    90 x[12,2]      NL             0             0             1           -10 
+    91 x[12,3]      B              0             0             1 
+    92 x[12,4]      NL             0             0             1            -9 
+    93 x[12,5]      NL             0             0             1            -8 
+    94 x[12,6]      NU             1             0             1             2 
+    95 x[12,7]      NL             0             0             1         < eps
+    96 x[12,8]      NL             0             0             1            -7 
+    97 x[13,1]      NU             1             0             1             2 
+    98 x[13,2]      NL             0             0             1            -6 
+    99 x[13,3]      NL             0             0             1         < eps
+   100 x[13,4]      NL             0             0             1            -6 
+   101 x[13,5]      NL             0             0             1            -5 
+   102 x[13,6]      NL             0             0             1           -18 
+   103 x[13,7]      NL             0             0             1            -2 
+   104 x[13,8]      NL             0             0             1            -2 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

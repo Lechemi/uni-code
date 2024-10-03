@@ -1,0 +1,164 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    percorso
+Objective:  z = 14 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Start        NS       1.00000        .            1.00000        1.00000          -Inf      14.00000 Flux[14]
+                                          10.00000       1.00000        1.00000          +Inf      14.00000 Flux[14]
+
+     2 Goal         NS       1.00000        .            1.00000        1.00000          -Inf      14.00000 Flux[14]
+                                           4.00000       1.00000        1.00000          +Inf      14.00000 Flux[14]
+
+     3 Flux[1]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                         -11.00000        .              .               +Inf      14.00000 Flux[14]
+
+     4 Flux[2]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -9.00000        .              .               +Inf      14.00000 Flux[14]
+
+     5 Flux[3]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -9.00000        .              .               +Inf      14.00000 Flux[14]
+
+     6 Flux[4]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -6.00000        .              .               +Inf      14.00000 Flux[14]
+
+     7 Flux[5]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -8.00000        .              .               +Inf      14.00000 Flux[14]
+
+     8 Flux[6]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -7.00000        .              .               +Inf      14.00000 Flux[14]
+
+     9 Flux[7]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -5.00000        .              .               +Inf      14.00000 Flux[14]
+
+    10 Flux[8]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -3.00000        .              .               +Inf      14.00000 Flux[14]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    percorso
+Objective:  z = 14 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Flux[9]      NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -4.00000        .              .               +Inf      14.00000 Flux[14]
+
+    12 Flux[10]     NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -2.00000        .              .               +Inf      14.00000 Flux[14]
+
+    13 Flux[11]     NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -2.00000        .              .               +Inf      14.00000 Flux[14]
+
+    14 Flux[12]     NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                          -1.00000        .              .               +Inf      14.00000 Flux[14]
+
+    15 Flux[13]     NS        .             .             .              .               -Inf      14.00000 Flux[14]
+                                           1.00000        .              .               +Inf      14.00000 Flux[14]
+
+    16 Flux[14]     BS        .             .             .              .               -Inf      14.00000
+                                            .             .              .               +Inf      14.00000
+
+    17 Flux[16]     BS        .             .             .              .               -Inf      14.00000
+                                            .             .              .               +Inf      14.00000
+
+    18 z            BS      14.00000     -14.00000          -Inf       14.00000      -1.00000        .      x[8]
+                                            .               +Inf       14.00000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    percorso
+Objective:  z = 14 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[1]         NL        .            2.00000        .              .           -1.00000      14.00000 x[2]
+                                           3.00000       1.00000        1.00000          +Inf      17.00000 x[2]
+
+     2 x[2]         BS       1.00000       1.00000        .             1.00000          -Inf          -Inf
+                                            .            1.00000         .            4.00000      17.00000 x[1]
+
+     3 x[22]        BS        .            3.00000        .             1.00000       3.00000      14.00000 x[18]
+                                            .            1.00000         .            5.00000      14.00000 x[4]
+
+     4 x[23]        BS       1.00000       4.00000        .             1.00000       2.00000      12.00000 x[4]
+                                            .            1.00000         .            4.00000      14.00000 x[18]
+
+     5 x[3]         BS        .            2.00000        .             1.00000      -1.00000      14.00000 x[1]
+                                            .            1.00000         .               +Inf      14.00000
+
+     6 x[4]         NL        .            2.00000        .            -1.00000        .           12.00000 x[22]
+                                           2.00000       1.00000         .               +Inf      14.00000 x[22]
+
+     7 x[5]         BS        .            3.00000        .             1.00000        .           14.00000 x[1]
+                                            .            1.00000         .            5.00000      14.00000 x[4]
+
+     8 x[6]         NL        .            2.00000        .              .            1.00000      14.00000 x[7]
+                                           1.00000       1.00000        1.00000          +Inf      15.00000 x[7]
+
+     9 x[7]         BS       1.00000       2.00000        .             1.00000        .           12.00000 x[4]
+                                            .            1.00000         .            3.00000      15.00000 x[6]
+
+    10 x[8]         NL        .            3.00000        .              .           -2.00000      14.00000 x[11]
+                                           5.00000       1.00000         .               +Inf      14.00000 x[22]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    percorso
+Objective:  z = 14 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 x[9]         NL        .            2.00000        .              .            2.00000      14.00000 x[16]
+                                            .            1.00000         .               +Inf      14.00000 x[10]
+
+    12 x[10]        BS        .            4.00000        .             1.00000       1.00000      14.00000 x[1]
+                                            .            1.00000         .            4.00000      14.00000 x[9]
+
+    13 x[11]        BS        .            3.00000        .             1.00000       2.00000      14.00000 x[6]
+                                            .            1.00000         .               +Inf      14.00000
+
+    14 x[12]        BS       1.00000       2.00000        .             1.00000        .           12.00000 x[4]
+                                            .            1.00000         .            3.00000      15.00000 x[6]
+
+    15 x[13]        BS       1.00000       2.00000        .             1.00000        .           12.00000 x[4]
+                                            .            1.00000         .            5.00000      17.00000 x[1]
+
+    16 x[14]        NL        .            2.00000        .              .           -1.00000      14.00000 x[22]
+                                           3.00000       1.00000        1.00000          +Inf      17.00000 x[22]
+
+    17 x[15]        BS       1.00000       1.00000        .             1.00000      -1.00000      12.00000 x[4]
+                                            .            1.00000         .            4.00000      17.00000 x[1]
+
+    18 x[16]        BS        .            5.00000        .              .            5.00000      14.00000 x[9]
+                                            .            1.00000         .               +Inf      14.00000
+
+    19 x[17]        BS        .            3.00000        .             1.00000        .           14.00000 x[1]
+                                            .            1.00000         .            3.00000      14.00000 x[9]
+
+    20 x[18]        NL        .            1.00000        .              .            1.00000      14.00000 x[22]
+                                            .            1.00000        1.00000          +Inf      14.00000 x[22]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    percorso
+Objective:  z = 14 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 x[19]        BS       1.00000       2.00000        .             1.00000        .           12.00000 x[4]
+                                            .            1.00000         .            2.00000      14.00000 x[18]
+
+    22 x[20]        BS        .            2.00000        .             1.00000       2.00000      14.00000 x[18]
+                                            .            1.00000         .               +Inf      14.00000
+
+    23 x[21]        NL        .            3.00000        .            -1.00000      -1.00000      10.00000 x[22]
+                                           4.00000       1.00000         .               +Inf      14.00000 x[22]
+
+End of report

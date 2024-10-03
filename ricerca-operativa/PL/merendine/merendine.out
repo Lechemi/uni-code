@@ -1,0 +1,87 @@
+Problem:    merendine
+Rows:       35
+Columns:    15
+Non-zeros:  167
+Status:     OPTIMAL
+Objective:  z = 17880.59701 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 DefAvanzi[1] NS          9999          9999             =         < eps
+     2 DefAvanzi[2] NS           300           300             =        21.791 
+     3 DefAvanzi[3] NS           320           320             =         < eps
+     4 DefAvanzi[4] NS           240           240             =       47.2637 
+     5 DefAvanzi[5] NS          9999          9999             =         < eps
+     6 Available[1] B         9128.6            -0               
+     7 Available[2] NL             0            -0                     -21.791 
+     8 Available[3] B        11.6418            -0               
+     9 Available[4] NL             0            -0                    -47.2637 
+    10 Available[5] B        9827.21            -0               
+    11 Biscotti1[1] B        59.3433            -0               
+    12 Biscotti1[2] B        41.5522            -0               
+    13 Biscotti2[1] B       -2.98507                          -0 
+    14 Biscotti2[2] NU             0                          -0         < eps
+    15 Avanzi[2]    B              0                          30 
+    16 Avanzi[3]    B        11.6418                          32 
+    17 Avanzi[4]    B              0                          24 
+    18 Grandi1[1]   NL             0            -0                       < eps
+    19 Grandi1[2]   NL             0            -0                       < eps
+    20 Grandi1[3]   NL             0            -0                       < eps
+    21 Grandi1[4]   B        1.19403            -0               
+    22 Grandi1[5]   B        34.0299            -0               
+    23 Grandi2[1]   B       -34.0299                          -0 
+    24 Grandi2[2]   B       -137.512                          -0 
+    25 Grandi2[3]   B       -138.507                          -0 
+    26 Grandi2[4]   B       -32.8358                          -0 
+    27 Grandi2[5]   NU             0                          -0         < eps
+    28 GrandiTot1   B        35.2239            -0               
+    29 GrandiTot2   B       -342.886                          -0 
+    30 TenPercent[1]
+                    NL             0            -0                    -4.90547 
+    31 TenPercent[2]
+                    B        517.413            -0               
+    32 TenPercent[3]
+                    B        522.388            -0               
+    33 TenPercent[4]
+                    NL             0            -0                     -11.995 
+    34 TenPercent[5]
+                    NL             0            -0                    -13.4478 
+    35 z            B        17880.6                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1]       B         102.09             0               
+     2 x[1,2]       B        68.0597             0               
+     3 x[2,1]       B        412.537             0               
+     4 x[2,2]       B        275.025             0               
+     5 x[3,1]       B        415.522             0               
+     6 x[3,2]       B        277.015             0               
+     7 x[4,1]       B        100.896             0               
+     8 x[4,2]       B        69.2537             0               
+     9 x[5,1]       B        68.0597             0               
+    10 x[5,2]       B         102.09             0               
+    11 avanzi[1]    B         9128.6                             
+    12 avanzi[2]    B              0                             
+    13 avanzi[3]    B        11.6418                             
+    14 avanzi[4]    B              0                             
+    15 avanzi[5]    B        9827.21                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 9.66e-13 on row 30
+        max.rel.err = 2.88e-13 on row 7
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 2.84e-14 on column 5
+        max.rel.err = 1.78e-15 on column 4
+        High quality
+
+KKT.DB: max.abs.err = 2.74e-14 on row 19
+        max.rel.err = 2.74e-14 on row 19
+        High quality
+
+End of output

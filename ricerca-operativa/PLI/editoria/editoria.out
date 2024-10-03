@@ -1,0 +1,96 @@
+Problem:    editoria
+Rows:       21
+Columns:    36 (36 integer, 36 binary)
+Non-zeros:  119
+Status:     INTEGER OPTIMAL
+Objective:  z1 = 10 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 UnFascicoloPerArticolo[1]
+                                   1                           1 
+     2 UnFascicoloPerArticolo[2]
+                                   1                           1 
+     3 UnFascicoloPerArticolo[3]
+                                   1                           1 
+     4 UnFascicoloPerArticolo[4]
+                                   1                           1 
+     5 UnFascicoloPerArticolo[5]
+                                   1                           1 
+     6 UnFascicoloPerArticolo[6]
+                                   0                           1 
+     7 UnFascicoloPerArticolo[7]
+                                   1                           1 
+     8 UnFascicoloPerArticolo[8]
+                                   1                           1 
+     9 UnFascicoloPerArticolo[9]
+                                   1                           1 
+    10 UnFascicoloPerArticolo[10]
+                                   1                           1 
+    11 UnFascicoloPerArticolo[11]
+                                   0                           1 
+    12 UnFascicoloPerArticolo[12]
+                                   1                           1 
+    13 LimitePagine[1]
+                                  44                          44 
+    14 LimitePagine[2]
+                                  44                          44 
+    15 LimitePagine[3]
+                                  37                          44 
+    16 Urgenza[1]                  1             1             = 
+    17 Urgenza[3]                  1             1             = 
+    18 Urgenza[5]                  1             1             = 
+    19 Urgenza[8]                  1             1             = 
+    20 Urgenza[9]                  1             1             = 
+    21 z1                         10                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1,1]       *              0             0             1 
+     2 x[1,2]       *              1             0             1 
+     3 x[1,3]       *              0             0             1 
+     4 x[2,1]       *              0             0             1 
+     5 x[2,2]       *              0             0             1 
+     6 x[2,3]       *              1             0             1 
+     7 x[3,1]       *              1             0             1 
+     8 x[3,2]       *              0             0             1 
+     9 x[3,3]       *              0             0             1 
+    10 x[4,1]       *              0             0             1 
+    11 x[4,2]       *              0             0             1 
+    12 x[4,3]       *              1             0             1 
+    13 x[5,1]       *              1             0             1 
+    14 x[5,2]       *              0             0             1 
+    15 x[5,3]       *              0             0             1 
+    16 x[6,1]       *              0             0             1 
+    17 x[6,2]       *              0             0             1 
+    18 x[6,3]       *              0             0             1 
+    19 x[7,1]       *              0             0             1 
+    20 x[7,2]       *              1             0             1 
+    21 x[7,3]       *              0             0             1 
+    22 x[8,1]       *              1             0             1 
+    23 x[8,2]       *              0             0             1 
+    24 x[8,3]       *              0             0             1 
+    25 x[9,1]       *              0             0             1 
+    26 x[9,2]       *              0             0             1 
+    27 x[9,3]       *              1             0             1 
+    28 x[10,1]      *              0             0             1 
+    29 x[10,2]      *              1             0             1 
+    30 x[10,3]      *              0             0             1 
+    31 x[11,1]      *              0             0             1 
+    32 x[11,2]      *              0             0             1 
+    33 x[11,3]      *              0             0             1 
+    34 x[12,1]      *              0             0             1 
+    35 x[12,2]      *              1             0             1 
+    36 x[12,3]      *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

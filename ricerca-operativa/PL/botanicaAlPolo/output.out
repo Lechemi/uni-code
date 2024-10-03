@@ -1,0 +1,89 @@
+Problem:    botanicaAlPolo
+Rows:       21
+Columns:    12
+Non-zeros:  70
+Status:     OPTIMAL
+Objective:  z = 43237.5 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Def_Quantity[Acqua_dolce]
+                    NS             0            -0             =            -1 
+     2 Def_Quantity[Sali_minerali]
+                    NS             0            -0             =            -4 
+     3 Def_Quantity[Calore]
+                    NS             0            -0             =            -1 
+     4 Def_Quantity[Luce]
+                    NS             0            -0             =          -1.5 
+     5 Def_Quantity[Vitamine]
+                    NS             0            -0             =          -3.6 
+     6 SuperficieMin[Azalea]
+                    NL             5             5                       -1377 
+     7 SuperficieMin[Begonia]
+                    B            100             5               
+     8 SuperficieMin[Carota]
+                    B            100             5               
+     9 SuperficieMin[Datteri]
+                    NL             5             5                      -91600 
+    10 SuperficieMin[Erba_cipollina]
+                    NL             5             5                      -876.5 
+    11 SuperficieMin[Fragolina_di_bosco]
+                    NL             5             5                       -1131 
+    12 SuperficieMin[Giaggiolo]
+                    B            100             5               
+    13 SuperficieMax[Azalea]
+                    B              5                         100 
+    14 SuperficieMax[Begonia]
+                    NU           100                         100          2756 
+    15 SuperficieMax[Carota]
+                    NU           100                         100        1587.6 
+    16 SuperficieMax[Datteri]
+                    B              5                         100 
+    17 SuperficieMax[Erba_cipollina]
+                    B              5                         100 
+    18 SuperficieMax[Fragolina_di_bosco]
+                    B              5                         100 
+    19 SuperficieMax[Giaggiolo]
+                    NU           100                         100          1338 
+    20 SuperficieTot
+                    B            320                         500 
+    21 z            B        93237.5                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[Azalea]    B              5             0               
+     2 x[Begonia]   B            100             0               
+     3 x[Carota]    B            100             0               
+     4 x[Datteri]   B              5             0               
+     5 x[Erba_cipollina]
+                    B              5             0               
+     6 x[Fragolina_di_bosco]
+                    B              5             0               
+     7 x[Giaggiolo] B            100             0               
+     8 a[Acqua_dolce]
+                    B         4902.5             0               
+     9 a[Sali_minerali]
+                    B          67250             0               
+    10 a[Calore]    B         130000             0               
+    11 a[Luce]      B         559250             0               
+    12 a[Vitamine]  B        24162.5             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

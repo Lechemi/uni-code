@@ -1,0 +1,144 @@
+Problem:    posologia
+Rows:       52
+Columns:    51 (17 integer, 17 binary)
+Non-zeros:  223
+Status:     INTEGER OPTIMAL
+Objective:  z2 = 2 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Binary[0]                -969                          -0 
+     2 Binary[1]                   0                          -0 
+     3 Binary[2]                   0                          -0 
+     4 Binary[3]                   0                          -0 
+     5 Binary[4]                   0                          -0 
+     6 Binary[5]                   0                          -0 
+     7 Binary[6]                   0                          -0 
+     8 Binary[7]                   0                          -0 
+     9 Binary[8]                   0                          -0 
+    10 Binary[9]                   0                          -0 
+    11 Binary[10]                  0                          -0 
+    12 Binary[11]                  0                          -0 
+    13 Binary[12]                  0                          -0 
+    14 Binary[13]                  0                          -0 
+    15 Binary[14]                  0                          -0 
+    16 Binary[15]                  0                          -0 
+    17 Binary[16]                  0                          -0 
+    18 DefS[0]                     0            -0             = 
+    19 DefS[1]                     0            -0             = 
+    20 DefS[2]                     0            -0             = 
+    21 DefS[3]                     0            -0             = 
+    22 DefS[4]                     0            -0             = 
+    23 DefS[5]                     0            -0             = 
+    24 DefS[6]                     0            -0             = 
+    25 DefS[7]                     0            -0             = 
+    26 DefS[8]                     0            -0             = 
+    27 DefS[9]                     0            -0             = 
+    28 DefS[10]                    0            -0             = 
+    29 DefS[11]                    0            -0             = 
+    30 DefS[12]                    0            -0             = 
+    31 DefS[13]                    0            -0             = 
+    32 DefS[14]                    0            -0             = 
+    33 DefS[15]                    0            -0             = 
+    34 DefS[16]                    0            -0             = 
+    35 Fabbisogno[0]
+                                  45             5               
+    36 Fabbisogno[1]
+                                  90             1               
+    37 Fabbisogno[2]
+                                 120            -0               
+    38 Fabbisogno[3]
+                                  75            -0               
+    39 Fabbisogno[4]
+                                  57            -0               
+    40 Fabbisogno[5]
+                                  42            -0               
+    41 Fabbisogno[6]
+                                  30             4               
+    42 Fabbisogno[7]
+                                  21            15               
+    43 Fabbisogno[8]
+                                  15            12               
+    44 Fabbisogno[9]
+                                   9             5               
+    45 Fabbisogno[10]
+                                   6             4               
+    46 Fabbisogno[11]
+                                   3             3               
+    47 Fabbisogno[12]
+                              1498.5            25               
+    48 Fabbisogno[13]
+                                2997            30               
+    49 Fabbisogno[14]
+                                3996            25               
+    50 Fabbisogno[15]
+                              2497.5            15               
+    51 Fabbisogno[16]
+                              1898.1             5               
+    52 z2                          2                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 q[0]                       30             0               
+     2 q[1]                        0             0               
+     3 q[2]                        0             0               
+     4 q[3]                        0             0               
+     5 q[4]                        0             0               
+     6 q[5]                        0             0               
+     7 q[6]                        0             0               
+     8 q[7]                        0             0               
+     9 q[8]                        0             0               
+    10 q[9]                        0             0               
+    11 q[10]                       0             0               
+    12 q[11]                       0             0               
+    13 q[12]                     999             0               
+    14 q[13]                       0             0               
+    15 q[14]                       0             0               
+    16 q[15]                       0             0               
+    17 q[16]                       0             0               
+    18 s[0]                       45             0               
+    19 s[1]                       90             0               
+    20 s[2]                      120             0               
+    21 s[3]                       75             0               
+    22 s[4]                       57             0               
+    23 s[5]                       42             0               
+    24 s[6]                       30             0               
+    25 s[7]                       21             0               
+    26 s[8]                       15             0               
+    27 s[9]                        9             0               
+    28 s[10]                       6             0               
+    29 s[11]                       3             0               
+    30 s[12]                  1498.5             0               
+    31 s[13]                    2997             0               
+    32 s[14]                    3996             0               
+    33 s[15]                  2497.5             0               
+    34 s[16]                  1898.1             0               
+    35 x[0]         *              1             0             1 
+    36 x[1]         *              0             0             1 
+    37 x[2]         *              0             0             1 
+    38 x[3]         *              0             0             1 
+    39 x[4]         *              0             0             1 
+    40 x[5]         *              0             0             1 
+    41 x[6]         *              0             0             1 
+    42 x[7]         *              0             0             1 
+    43 x[8]         *              0             0             1 
+    44 x[9]         *              0             0             1 
+    45 x[10]        *              0             0             1 
+    46 x[11]        *              0             0             1 
+    47 x[12]        *              1             0             1 
+    48 x[13]        *              0             0             1 
+    49 x[14]        *              0             0             1 
+    50 x[15]        *              0             0             1 
+    51 x[16]        *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,96 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    sabotaggio
+Objective:  z = 73 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Capacity[1]  BS      42.00000      16.00000          -Inf       30.00000      -1.00000      31.00000 Capacity[4]
+                                            .           58.00000       52.00000        .           73.00000 Capacity[2]
+
+     2 Capacity[2]  NU      31.00000        .               -Inf       21.00000        .           73.00000 Capacity[3]
+                                            .           31.00000       61.00000          +Inf      73.00000 x[3]
+
+     3 Capacity[3]  BS      30.00000      10.00000          -Inf        5.00000      -1.00000      43.00000 Capacity[7]
+                                            .           40.00000       46.00000        .           73.00000 Capacity[2]
+
+     4 Capacity[4]  NU      12.00000        .               -Inf         .           -1.00000      61.00000 x[4]
+                                           1.00000      12.00000       28.00000          +Inf      89.00000 Capacity[1]
+
+     5 Capacity[5]  BS      61.00000       5.00000          -Inf       36.00000      -1.00000      12.00000 Capacity[7]
+                                            .           66.00000       61.00000          +Inf          +Inf
+
+     6 Capacity[6]  BS      37.00000      22.00000          -Inf       25.00000      -1.00000      36.00000 Capacity[4]
+                                            .           59.00000       37.00000          +Inf          +Inf
+
+     7 Capacity[7]  NU      25.00000        .               -Inf         .           -1.00000      48.00000 x[7]
+                                           1.00000      25.00000       30.00000          +Inf      78.00000 Capacity[5]
+
+     8 Capacity[8]  NU      36.00000        .               -Inf        6.00000      -1.00000      43.00000 x[3]
+                                           1.00000      36.00000       41.00000          +Inf      78.00000 Capacity[5]
+
+     9 FluxConservationOD
+                    NS        .             .             .              .               -Inf      73.00000 FluxConservation[6]
+                                           1.00000        .              .               +Inf      73.00000 FluxConservation[6]
+
+    10 FluxConservation[3]
+                    NS        .             .             .              .               -Inf      73.00000 FluxConservation[6]
+                                            .             .              .               +Inf      73.00000 FluxConservation[6]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    sabotaggio
+Objective:  z = 73 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 FluxConservation[4]
+                    NS        .             .             .              .               -Inf      73.00000 FluxConservation[6]
+                                            .             .              .               +Inf      73.00000 FluxConservation[6]
+
+    12 FluxConservation[5]
+                    NS        .             .             .              .               -Inf      73.00000 FluxConservation[6]
+                                          -1.00000        .              .               +Inf      73.00000 FluxConservation[6]
+
+    13 FluxConservation[6]
+                    BS        .             .             .              .               -Inf      73.00000
+                                            .             .              .               +Inf      73.00000
+
+    14 z            BS      73.00000     -73.00000          -Inf       61.00000      -1.00000        .      Capacity[4]
+                                            .               +Inf       73.00000          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    sabotaggio
+Objective:  z = 73 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[1]         BS      42.00000       1.00000        .            30.00000        .           31.00000 Capacity[4]
+                                            .               +Inf       52.00000       1.00000      73.00000 Capacity[2]
+
+     2 x[2]         BS      31.00000       1.00000        .            21.00000       1.00000      73.00000 Capacity[2]
+                                            .               +Inf       31.00000          +Inf          +Inf
+
+     3 x[3]         BS      30.00000        .             .             5.00000      -1.00000      43.00000 Capacity[7]
+                                            .               +Inf       40.00000        .           73.00000 Capacity[2]
+
+     4 x[4]         BS      12.00000        .             .           -25.00000      -1.00000      61.00000 Capacity[4]
+                                            .               +Inf       12.00000          +Inf          +Inf
+
+     5 x[5]         BS      61.00000        .             .            36.00000      -1.00000      12.00000 Capacity[7]
+                                            .               +Inf       61.00000          +Inf          +Inf
+
+     6 x[6]         BS      37.00000        .             .            25.00000      -1.00000      36.00000 Capacity[4]
+                                            .               +Inf       37.00000          +Inf          +Inf
+
+     7 x[7]         BS      25.00000        .             .            -5.00000      -1.00000      48.00000 Capacity[7]
+                                            .               +Inf       25.00000          +Inf          +Inf
+
+     8 x[8]         BS      36.00000        .             .             6.00000      -1.00000      37.00000 Capacity[8]
+                                            .               +Inf       36.00000          +Inf          +Inf
+
+End of report

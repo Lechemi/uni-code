@@ -1,0 +1,295 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    zoo
+Objective:  z2 = 9.632564453 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 FabGlobale[1]
+                    NS      21.60000        .           21.60000           -Inf          -Inf       9.63256
+                                            .           21.60000      126.20927          +Inf       9.63256 Fabbisogno[1]
+
+     2 FabGlobale[2]
+                    NS      10.00000        .           10.00000           -Inf          -Inf       9.63256
+                                            .           10.00000       10.54487          +Inf       9.63256 Fabbisogno[2]
+
+     3 FabGlobale[3]
+                    NS      29.30000        .           29.30000           -Inf          -Inf       9.63256
+                                            .           29.30000       70.67952          +Inf       9.63256 Fabbisogno[3]
+
+     4 FabGlobale[4]
+                    NS      81.70000        .           81.70000       76.77280          -Inf       9.83313 Fabbisogno[2]
+                                           -.04071      81.70000      426.65317          +Inf      -4.40895 Fabbisogno[1]
+
+     5 FabGlobale[5]
+                    NS       5.40000        .            5.40000        1.04596          -Inf      13.00000 Elefanti
+                                           -.77341       5.40000        6.76587          +Inf       8.57619 Fabbisogno[2]
+
+     6 FabGlobale[6]
+                    NS       7.60000        .            7.60000      -10.12714          -Inf      13.00000 Elefanti
+                                           -.18996       7.60000       11.21772          +Inf       8.94535 Fabbisogno[2]
+
+     7 FabGlobale[7]
+                    NS      15.50000        .           15.50000      -43.59048          -Inf      13.00000 Elefanti
+                                           -.05699      15.50000       19.25296          +Inf       9.41869 Fabbisogno[2]
+
+     8 FabGlobale[8]
+                    NS     120.90000        .          120.90000           -Inf          -Inf       9.63256
+                                            .          120.90000           +Inf          +Inf       9.63256
+
+     9 Fabbisogno[1]
+                    BS     104.60927    -104.60927        .           101.89003       -.07865       1.40487 Fabbisogno[7]
+                                            .               +Inf      115.17857        .09995      20.08799 Fabbisogno[5]
+
+    10 Fabbisogno[2]
+                    BS        .54487       -.54487        .           -20.41617       -.39252       9.41869 Fabbisogno[7]
+                                            .               +Inf       38.69098        .36810       9.83313 Fabbisogno[4]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    zoo
+Objective:  z2 = 9.632564453 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 Fabbisogno[3]
+                    BS      41.37952     -41.37952        .            38.78979       -.55675     -13.40551 Giraffe
+                                            .               +Inf      245.68353        .06873      12.47652 Fabbisogno[4]
+
+    12 Fabbisogno[4]
+                    NL        .             .             .            -4.92720          -Inf       9.83313 Fabbisogno[2]
+                                           -.04071          +Inf      344.95317        .04071      -4.40895 Fabbisogno[1]
+
+    13 Fabbisogno[5]
+                    NL        .             .             .            -4.35404          -Inf      13.00000 Elefanti
+                                           -.77341          +Inf        1.36587        .77341       8.57619 Fabbisogno[2]
+
+    14 Fabbisogno[6]
+                    NL        .             .             .           -17.72714          -Inf      13.00000 Elefanti
+                                           -.18996          +Inf        3.61772        .18996       8.94535 Fabbisogno[2]
+
+    15 Fabbisogno[7]
+                    NL        .             .             .           -59.09048          -Inf      13.00000 Elefanti
+                                           -.05699          +Inf        3.75296        .05699       9.41869 Fabbisogno[2]
+
+    16 Extra[1]     NS        .             .             .            -8.67762          -Inf       4.32238 Elefanti
+                                            .61194        .             6.88794          +Inf      13.84757 Fabbisogno[2]
+
+    17 Extra[2]     NS        .             .             .           -16.43576          -Inf      -3.43576 Elefanti
+                                            .79512        .              .50604          +Inf      10.03492 Fabbisogno[2]
+
+    18 Extra[3]     NS        .             .             .           -19.23876          -Inf      -6.23876 Elefanti
+                                            .82497        .             1.14832          +Inf      10.57989 Fabbisogno[2]
+
+    19 Extra[4]     NS        .             .             .           -15.22577          -Inf      -2.22577 Elefanti
+                                            .77883        .              .86145          +Inf      10.30349 Fabbisogno[2]
+
+    20 Extra[6]     NS        .             .             .          -590.90476          -Inf    -577.90476 Elefanti
+                                            .99430        .            37.52960          +Inf      46.94829 Fabbisogno[2]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    zoo
+Objective:  z2 = 9.632564453 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 Extra[8]     NS        .             .             .            -1.73838          -Inf       9.32121 Fabbisogno[2]
+                                            .17910        .             7.79867          +Inf      11.02934 Fabbisogno[3]
+
+    22 Extra[9]     NS        .             .             .           -64.63021          -Inf     -51.63021 Elefanti
+                                            .94790        .              .59324          +Inf      10.19490 Fabbisogno[2]
+
+    23 Extra[10]    NS        .             .             .            -3.87781          -Inf       9.12219 Elefanti
+                                            .13161        .             1.14897          +Inf       9.78379 Fabbisogno[2]
+
+    24 Extra[11]    NS        .             .             .           -13.97329          -Inf      -1.49677 Fabbisogno[3]
+                                            .79647        .             1.21872          +Inf      10.60324 Fabbisogno[2]
+
+    25 Extra[12]    NS        .             .             .           -19.69683          -Inf      -6.69683 Elefanti
+                                            .82904        .             1.25099          +Inf      10.66968 Fabbisogno[2]
+
+    26 Extra[13]    NS        .             .             .           -82.72667          -Inf     -69.72667 Elefanti
+                                            .95929        .             1.39919          +Inf      10.97480 Fabbisogno[2]
+
+    27 Extra[14]    NS        .             .             .          -295.45238          -Inf    -282.45238 Elefanti
+                                            .98860        .            18.76480          +Inf      28.18349 Fabbisogno[2]
+
+    28 Extra[15]    NS        .             .             .             -.53117          -Inf       9.56265 Fabbisogno[2]
+                                            .13161        .            19.12603          +Inf      12.14983 Fabbisogno[1]
+
+    29 Extra[16]    NS        .             .             .           -49.27198          -Inf     -39.43885 Fabbisogno[2]
+                                            .99593        .           197.25479          +Inf     206.08441 Fabbisogno[1]
+
+    30 Extra[17]    NS        .             .             .             -.85114          -Inf       9.30574 Fabbisogno[2]
+                                            .38399        .            75.29742          +Inf      38.54596 Fabbisogno[1]
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    zoo
+Objective:  z2 = 9.632564453 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 Extra[18]    NS        .             .             .           -26.68602          -Inf     -13.68602 Elefanti
+                                            .87381        .             9.52709          +Inf      17.95745 Fabbisogno[2]
+
+    32 Extra[19]    NS        .             .             .           -18.80152          -Inf      -5.80152 Elefanti
+                                            .82090        .            40.56229          +Inf      42.92997 Fabbisogno[2]
+
+    33 Extra[20]    NS        .             .             .            -2.17298          -Inf       8.88662 Fabbisogno[2]
+                                            .34328        .                +Inf          +Inf          +Inf
+
+    34 Elefanti     BS       1.63256       3.36744          -Inf        1.41869      -1.00000       8.00000 Fabbisogno[7]
+                                            .            5.00000        1.83313       7.18889      21.36889 Giraffe
+
+    35 Giraffe      NU       8.00000        .               -Inf        6.35760       -.87788       8.19073 Fabbisogno[2]
+                                            .87788       8.00000      122.98439          +Inf     110.57544 Fabbisogno[1]
+
+    36 z2           BS       9.63256      -9.63256          -Inf        9.41869      -1.00000        .      Fabbisogno[7]
+                                            .               +Inf        9.63256          +Inf          +Inf
+
+    37 Spesa        NS    1527.86667        .         1527.86667     1338.89412          -Inf       8.09412 Fabbisogno[2]
+                                            .00814    1527.86667     1941.50000          +Inf      13.00000 Elefanti
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    zoo
+Objective:  z2 = 9.632564453 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[1]         BS     124.32564        .               -Inf      -16.08949       -.10000      -2.80000 Fabbisogno[4]
+                                            .               +Inf      141.07937        .06305      17.47168 Fabbisogno[5]
+
+     2 x[2]         BS     227.22298        .               -Inf      214.18692       -.01641       5.90469 Fabbisogno[7]
+                                            .               +Inf      849.73005        .02256      14.75789 Fabbisogno[4]
+
+     3 x[3]         BS      68.53026        .               -Inf       65.78138       -.25000      -7.50000 Fabbisogno[6]
+                                            .               +Inf       82.68660        .01511      10.66791 Fabbisogno[7]
+
+     4 x[4]         BS      61.55043        .               -Inf       60.12461       -.15000        .40000 Fabbisogno[7]
+                                            .               +Inf       81.08709        .03518      11.79765 Fabbisogno[6]
+
+     5 fabGlobale[1]
+                    BS      21.60000        .               -Inf       21.60000          -Inf          -Inf
+                                            .               +Inf       21.60000          +Inf          +Inf
+
+     6 fabGlobale[2]
+                    BS      10.81628        .               -Inf       10.70935      -2.00000     -12.00000 Fabbisogno[7]
+                                            .               +Inf       10.91656      14.37778     165.14667 Giraffe
+
+     7 fabGlobale[3]
+                    BS      39.06282        .               -Inf      -31.14474       -.20000       1.82000 Fabbisogno[4]
+                                            .               +Inf       39.73716       2.13814      93.15420 Giraffe
+
+     8 fabGlobale[4]
+                    BS     120.39308        .               -Inf       -5.98054       -.11111      -3.74444 Fabbisogno[4]
+                                            .               +Inf      120.39308          +Inf          +Inf
+
+     9 fabGlobale[5]
+                    BS       6.21628        .               -Inf        6.10935      -2.00000      -2.80000 Fabbisogno[7]
+                                            .               +Inf        6.31656      14.37778      99.00889 Giraffe
+
+    10 fabGlobale[6]
+                    BS       9.23256        .               -Inf        9.01869      -1.00000        .40000 Fabbisogno[7]
+                                            .               +Inf        9.43313       7.18889      76.00444 Giraffe
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   6
+
+Problem:    zoo
+Objective:  z2 = 9.632564453 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 fabGlobale[7]
+                    BS      17.13256        .               -Inf       16.91869      -1.00000      -7.50000 Fabbisogno[7]
+                                            .               +Inf       17.33313       7.18889     132.79667 Giraffe
+
+    12 fabGlobale[8]
+                    BS     167.59308        .               -Inf       41.21946       -.11111      -8.98889 Fabbisogno[4]
+                                            .               +Inf      167.59308          +Inf          +Inf
+
+    13 y[1]         BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    14 y[2]         BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    15 y[3]         BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    16 y[4]         BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    17 y[5]         BS       1.63256       1.00000          -Inf        1.41869        .            8.00000 Fabbisogno[7]
+                                            .               +Inf        1.83313       8.18889      21.36889 Giraffe
+
+    18 y[6]         BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    19 y[7]         BS       8.00000       1.00000          -Inf        6.35760        .12212       2.60950 Giraffe
+                                            .               +Inf        8.00000          +Inf          +Inf
+
+    20 y[8]         BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   7
+
+Problem:    zoo
+Objective:  z2 = 9.632564453 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 y[9]         BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    22 y[10]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    23 y[11]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    24 y[12]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    25 y[13]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    26 y[14]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    27 y[15]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    28 y[16]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    29 y[17]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    30 y[18]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   8
+
+Problem:    zoo
+Objective:  z2 = 9.632564453 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 y[19]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+    32 y[20]        BS        .            1.00000          -Inf         .               -Inf       9.63256
+                                            .               +Inf         .               +Inf       9.63256
+
+End of report

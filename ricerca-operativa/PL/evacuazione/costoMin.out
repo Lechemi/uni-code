@@ -1,0 +1,136 @@
+Problem:    evacuazione
+Rows:       48
+Columns:    20
+Non-zeros:  111
+Status:     OPTIMAL
+Objective:  z = 1046831.618 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Capacity[1,1]
+                    B        212.869                         400 
+     2 Capacity[1,2]
+                    B        59.2154                         400 
+     3 Capacity[1,3]
+                    B         251.24                         400 
+     4 Capacity[1,4]
+                    B              0                         400 
+     5 Capacity[1,5]
+                    B        326.676                         400 
+     6 Capacity[1,6]
+                    B              0                         400 
+     7 Capacity[2,1]
+                    B        287.131                         400 
+     8 Capacity[2,2]
+                    B        200.992                         400 
+     9 Capacity[2,3]
+                    B        102.662                         400 
+    10 Capacity[2,4]
+                    B        287.131                         400 
+    11 Capacity[2,5]
+                    B        223.324                         400 
+    12 Capacity[2,6]
+                    B         148.76                         400 
+    13 Capacity[3,1]
+                    B              0                         400 
+    14 Capacity[3,2]
+                    B        287.131                         400 
+    15 Capacity[3,3]
+                    B         110.39                         400 
+    16 Capacity[3,4]
+                    B         251.24                         400 
+    17 Capacity[3,5]
+                    B              0                         400 
+    18 Capacity[3,6]
+                    B         251.24                         400 
+    19 Empty[1]     NS           850           850             =           350 
+    20 Empty[2]     NS          1250          1250             =           450 
+    21 Empty[3]     NS           900           900             =           420 
+    22 Capienza[1]  NU           500                         500          -100 
+    23 Capienza[2]  B        547.338                         650 
+    24 Capienza[3]  B        464.291                         550 
+    25 Capienza[4]  B        538.371                         550 
+    26 Capienza[5]  NU           550                         550           -40 
+    27 Capienza[6]  NU           400                         400          -100 
+    28 TempoMax[1,1]
+                    B         57.922            -0               
+    29 TempoMax[1,2]
+                    B        79.7704            -0               
+    30 TempoMax[1,3]
+                    NL             0            -0                         125 
+    31 TempoMax[1,4]
+                    B        100.496            -0               
+    32 TempoMax[1,5]
+                    B        18.8268            -0               
+    33 TempoMax[1,6]
+                    B        100.496            -0               
+    34 TempoMax[2,1]
+                    NL             0            -0                         200 
+    35 TempoMax[2,2]
+                    NL             0            -0                          60 
+    36 TempoMax[2,3]
+                    B        54.2979            -0               
+    37 TempoMax[2,4]
+                    NL             0            -0                     171.429 
+    38 TempoMax[2,5]
+                    NL             0            -0                     77.7778 
+    39 TempoMax[2,6]
+                    B        40.9917            -0               
+    40 TempoMax[3,1]
+                    B        100.496            -0               
+    41 TempoMax[3,2]
+                    NL             0            -0                     28.5714 
+    42 TempoMax[3,3]
+                    B        50.8204            -0               
+    43 TempoMax[3,4]
+                    NL             0            -0                          50 
+    44 TempoMax[3,5]
+                    B        100.496            -0               
+    45 TempoMax[3,6]
+                    NL             0            -0                          75 
+    46 DefCosti     NS             0            -0             =             1 
+    47 Parametric   NU       100.496                     100.496      -787.778 
+    48 z            B    1.04683e+06                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1]       B        212.869             0               
+     2 x[1,2]       B        59.2154             0               
+     3 x[1,3]       B         251.24             0               
+     4 x[1,4]       NL             0             0                          30 
+     5 x[1,5]       B        326.676             0               
+     6 x[1,6]       NL             0             0                          90 
+     7 x[2,1]       B        287.131             0               
+     8 x[2,2]       B        200.992             0               
+     9 x[2,3]       B        102.662             0               
+    10 x[2,4]       B        287.131             0               
+    11 x[2,5]       B        223.324             0               
+    12 x[2,6]       B         148.76             0               
+    13 x[3,1]       NL             0             0                          40 
+    14 x[3,2]       B        287.131             0               
+    15 x[3,3]       B         110.39             0               
+    16 x[3,4]       B         251.24             0               
+    17 x[3,5]       NL             0             0                       < eps
+    18 x[3,6]       B         251.24             0               
+    19 tempo        B        100.496                             
+    20 costo        B    1.04683e+06                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 2.84e-14 on row 37
+        max.rel.err = 1.41e-16 on row 37
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 5.68e-14 on column 1
+        max.rel.err = 8.11e-17 on column 1
+        High quality
+
+KKT.DB: max.abs.err = 1.14e-13 on column 17
+        max.rel.err = 1.14e-13 on column 17
+        High quality
+
+End of output

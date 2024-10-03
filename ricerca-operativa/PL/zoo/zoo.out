@@ -1,0 +1,85 @@
+Problem:    zoo
+Rows:       17
+Columns:    12
+Non-zeros:  38
+Status:     OPTIMAL
+Objective:  z1 = 1527.866667 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 FabGlobale[1]
+                    NS          21.6          21.6             =         < eps
+     2 FabGlobale[2]
+                    NS            10            10             =         < eps
+     3 FabGlobale[3]
+                    NS          29.3          29.3             =         < eps
+     4 FabGlobale[4]
+                    NS          81.7          81.7             =         < eps
+     5 FabGlobale[5]
+                    NS           5.4           5.4             =            84 
+     6 FabGlobale[6]
+                    NS           7.6           7.6             =       2.66667 
+     7 FabGlobale[7]
+                    NS          15.5          15.5             =           5.6 
+     8 FabGlobale[8]
+                    NS         120.9         120.9             =             8 
+     9 Fabbisogno[1]
+                    B        92.4467            -0               
+    10 Fabbisogno[2]
+                    B           4.98            -0               
+    11 Fabbisogno[3]
+                    B        66.7333            -0               
+    12 Fabbisogno[4]
+                    B        64.1067            -0               
+    13 Fabbisogno[5]
+                    NL             0            -0                          84 
+    14 Fabbisogno[6]
+                    NL             0            -0                     2.66667 
+    15 Fabbisogno[7]
+                    NL             0            -0                         5.6 
+    16 Fabbisogno[8]
+                    NL             0            -0                           8 
+    17 z1           B        1527.87                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1]         B            108                             
+     2 x[2]         B          299.6                             
+     3 x[3]         B             62                             
+     4 x[4]         B        50.6667                             
+     5 fabGlobale[1]
+                    B           21.6                             
+     6 fabGlobale[2]
+                    B             10                             
+     7 fabGlobale[3]
+                    B           29.3                             
+     8 fabGlobale[4]
+                    B           81.7                             
+     9 fabGlobale[5]
+                    B            5.4                             
+    10 fabGlobale[6]
+                    B            7.6                             
+    11 fabGlobale[7]
+                    B           15.5                             
+    12 fabGlobale[8]
+                    B          120.9                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.42e-14 on row 16
+        max.rel.err = 5.85e-17 on row 16
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

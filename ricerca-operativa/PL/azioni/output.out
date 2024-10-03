@@ -1,0 +1,44 @@
+Problem:    azioni
+Rows:       7
+Columns:    5
+Non-zeros:  21
+Status:     OPTIMAL
+Objective:  z = 1344 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Budget       NU         80000                       80000        0.0168 
+     2 Quantity[1]  NL             0            -0                       -0.06 
+     3 Quantity[2]  B              0            -0               
+     4 Quantity[3]  B           1280            -0               
+     5 Def1         NS             0            -0             =           0.2 
+     6 Def2         NS             0            -0             =           0.8 
+     7 z            B           1344                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1]         B            640             0               
+     2 x[2]         B            640             0               
+     3 x[3]         NL             0             0                      -2.892 
+     4 f1           B           5440                             
+     5 f2           B            320                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.14e-13 on row 2
+        max.rel.err = 8.87e-17 on row 2
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 2.22e-16 on column 2
+        max.rel.err = 6.31e-17 on column 2
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,118 @@
+Problem:    posologia
+Rows:       35
+Columns:    34
+Non-zeros:  189
+Status:     OPTIMAL
+Objective:  z1 = 15.03423535 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 DefS[0]      NS             0            -0             =     -0.567609 
+     2 DefS[1]      NS             0            -0             =         < eps
+     3 DefS[2]      NS             0            -0             =         < eps
+     4 DefS[3]      NS             0            -0             =         < eps
+     5 DefS[4]      NS             0            -0             =         < eps
+     6 DefS[5]      NS             0            -0             =         < eps
+     7 DefS[6]      NS             0            -0             =         < eps
+     8 DefS[7]      NS             0            -0             =     -0.171274 
+     9 DefS[8]      NS             0            -0             =    -0.0573896 
+    10 DefS[9]      NS             0            -0             =         < eps
+    11 DefS[10]     NS             0            -0             =         < eps
+    12 DefS[11]     NS             0            -0             =         < eps
+    13 DefS[12]     NS             0            -0             =      -0.14941 
+    14 DefS[13]     NS             0            -0             =    -0.0314548 
+    15 DefS[14]     NS             0            -0             =      -0.17038 
+    16 DefS[15]     NS             0            -0             =         < eps
+    17 DefS[16]     NS             0            -0             =         < eps
+    18 Fabbisogno[0]
+                    NL             5             5                    0.567609 
+    19 Fabbisogno[1]
+                    B             10             1               
+    20 Fabbisogno[2]
+                    B        13.3333            -0               
+    21 Fabbisogno[3]
+                    B        8.33333            -0               
+    22 Fabbisogno[4]
+                    B        6.33333            -0               
+    23 Fabbisogno[5]
+                    B        8.13725            -0               
+    24 Fabbisogno[6]
+                    B        11.9804             4               
+    25 Fabbisogno[7]
+                    NL            15            15                    0.171274 
+    26 Fabbisogno[8]
+                    NL            12            12                   0.0573896 
+    27 Fabbisogno[9]
+                    B        8.23922             5               
+    28 Fabbisogno[10]
+                    B         8.3385             4               
+    29 Fabbisogno[11]
+                    B        14.8647             3               
+    30 Fabbisogno[12]
+                    NL            25            25                     0.14941 
+    31 Fabbisogno[13]
+                    NL            30            30                   0.0314548 
+    32 Fabbisogno[14]
+                    NL            25            25                     0.17038 
+    33 Fabbisogno[15]
+                    B          17.33            15               
+    34 Fabbisogno[16]
+                    B        12.7433             5               
+    35 z1           B        15.0342                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 q[0]         B        3.33333             0               
+     2 q[1]         NL             0             0                    0.773612 
+     3 q[2]         NL             0             0                    0.669799 
+     4 q[3]         NL             0             0                    0.526081 
+     5 q[4]         NL             0             0                    0.344556 
+     6 q[5]         B        2.31373             0               
+     7 q[6]         B        1.13725             0               
+     8 q[7]         NL             0             0                    0.211025 
+     9 q[8]         NL             0             0                    0.415619 
+    10 q[9]         NL             0             0                    0.328178 
+    11 q[10]        B        1.51456             0               
+    12 q[11]        B        4.05457             0               
+    13 q[12]        B        2.68079             0               
+    14 q[13]        NL             0             0                    0.441678 
+    15 q[14]        NL             0             0                     0.74443 
+    16 q[15]        NL             0             0                           1 
+    17 q[16]        NL             0             0                           1 
+    18 s[0]         B              5             0               
+    19 s[1]         B             10             0               
+    20 s[2]         B        13.3333             0               
+    21 s[3]         B        8.33333             0               
+    22 s[4]         B        6.33333             0               
+    23 s[5]         B        8.13725             0               
+    24 s[6]         B        11.9804             0               
+    25 s[7]         B             15             0               
+    26 s[8]         B             12             0               
+    27 s[9]         B        8.23922             0               
+    28 s[10]        B         8.3385             0               
+    29 s[11]        B        14.8647             0               
+    30 s[12]        B             25             0               
+    31 s[13]        B             30             0               
+    32 s[14]        B             25             0               
+    33 s[15]        B          17.33             0               
+    34 s[16]        B        12.7433             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.60e-14 on row 26
+        max.rel.err = 6.39e-16 on row 26
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 3.11e-15 on column 11
+        max.rel.err = 1.04e-15 on column 11
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

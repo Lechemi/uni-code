@@ -1,0 +1,108 @@
+Problem:    mediane
+Rows:       73
+Columns:    11 (10 integer, 10 binary)
+Non-zeros:  147
+Status:     INTEGER OPTIMAL
+Objective:  z = 799 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Scelta                      2             2             = 
+     2 Candidati                   0            -0             = 
+     3 z                         799                             
+     4 MinMax[1,1]               799            -0               
+     5 MinMax[1,2]               799            -0               
+     6 MinMax[1,3]               799            -0               
+     7 MinMax[1,4]               799            -0               
+     8 MinMax[1,5]               799            -0               
+     9 MinMax[1,6]               799            -0               
+    10 MinMax[1,7]               799            -0               
+    11 MinMax[1,8]               799            -0               
+    12 MinMax[1,9]               799            -0               
+    13 MinMax[1,10]              799            -0               
+    14 MinMax[2,1]               799            -0               
+    15 MinMax[2,2]               799            -0               
+    16 MinMax[2,3]               799            -0               
+    17 MinMax[2,4]               799            -0               
+    18 MinMax[2,5]               799            -0               
+    19 MinMax[2,6]               799            -0               
+    20 MinMax[2,7]               799            -0               
+    21 MinMax[2,8]               799            -0               
+    22 MinMax[2,9]               799            -0               
+    23 MinMax[2,10]              799            -0               
+    24 MinMax[3,1]               799            -0               
+    25 MinMax[3,2]               799            -0               
+    26 MinMax[3,3]               799            -0               
+    27 MinMax[3,4]               799            -0               
+    28 MinMax[3,5]               799            -0               
+    29 MinMax[3,6]               799            -0               
+    30 MinMax[3,7]               799            -0               
+    31 MinMax[3,8]               799            -0               
+    32 MinMax[3,9]               799            -0               
+    33 MinMax[3,10]              799            -0               
+    34 MinMax[4,1]               270            -0               
+    35 MinMax[4,2]               325            -0               
+    36 MinMax[4,3]               490            -0               
+    37 MinMax[4,4]               799            -0               
+    38 MinMax[4,5]               424            -0               
+    39 MinMax[4,6]               605            -0               
+    40 MinMax[4,7]               422            -0               
+    41 MinMax[4,8]               334            -0               
+    42 MinMax[4,9]               156            -0               
+    43 MinMax[4,10]              220            -0               
+    44 MinMax[5,1]               504            -0               
+    45 MinMax[5,2]                 0            -0               
+    46 MinMax[5,3]               164            -0               
+    47 MinMax[5,4]               424            -0               
+    48 MinMax[5,5]               799            -0               
+    49 MinMax[5,6]               388            -0               
+    50 MinMax[5,7]               540            -0               
+    51 MinMax[5,8]               405            -0               
+    52 MinMax[5,9]               200            -0               
+    53 MinMax[5,10]              506            -0               
+    54 MinMax[6,1]               799            -0               
+    55 MinMax[6,2]               799            -0               
+    56 MinMax[6,3]               799            -0               
+    57 MinMax[6,4]               799            -0               
+    58 MinMax[6,5]               799            -0               
+    59 MinMax[6,6]               799            -0               
+    60 MinMax[6,7]               799            -0               
+    61 MinMax[6,8]               799            -0               
+    62 MinMax[6,9]               799            -0               
+    63 MinMax[6,10]              799            -0               
+    64 MinMax[8,1]               799            -0               
+    65 MinMax[8,2]               799            -0               
+    66 MinMax[8,3]               799            -0               
+    67 MinMax[8,4]               799            -0               
+    68 MinMax[8,5]               799            -0               
+    69 MinMax[8,6]               799            -0               
+    70 MinMax[8,7]               799            -0               
+    71 MinMax[8,8]               799            -0               
+    72 MinMax[8,9]               799            -0               
+    73 MinMax[8,10]              799            -0               
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1]         *              0             0             1 
+     2 x[2]         *              0             0             1 
+     3 x[3]         *              0             0             1 
+     4 x[4]         *              1             0             1 
+     5 x[5]         *              1             0             1 
+     6 x[6]         *              0             0             1 
+     7 x[7]         *              0             0             1 
+     8 x[8]         *              0             0             1 
+     9 x[9]         *              0             0             1 
+    10 x[10]        *              0             0             1 
+    11 maxDistance               799             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

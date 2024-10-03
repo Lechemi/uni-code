@@ -1,0 +1,167 @@
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    caramelle
+Objective:  z = 862.5537041 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Consumi[Fruttosio]
+                    BS       8.83401        .16599          -Inf        7.80974      -3.40014     832.51680 Consumi[Saccarosio]
+                                            .            9.00000        9.88789      15.38462     998.46154 Consumi[Estratti_di_erbe]
+
+     2 Consumi[Saccarosio]
+                    NU       5.00000        .               -Inf        4.26433      -4.73399     859.07103 x[Dolce]
+                                           4.73399       5.00000        5.11922          +Inf     863.11810 Consumi[Fruttosio]
+
+     3 Consumi[Glucosio]
+                    NU      20.00000        .               -Inf       16.98723     -14.85913     817.78656 Consumi[Conservanti]
+                                          14.85913      20.00000       20.70889          +Inf     873.08717 Consumi[Fruttosio]
+
+     4 Consumi[Destrosio]
+                    NU      18.00000        .               -Inf       12.63211      -3.91822     841.52113 x[Golosa]
+                                           3.91822      18.00000       21.75199          +Inf     877.25483 Consumi[Conservanti]
+
+     5 Consumi[Estratti_di_erbe]
+                    NU      20.00000        .               -Inf       18.80000      -2.12809     860.00000 Consumi[Fruttosio]
+                                           2.12809      20.00000       23.55513          +Inf     870.11933 Consumi[Aromatizzanti]
+
+     6 Consumi[Estratti_di_frutta]
+                    NU      17.00000        .               -Inf       12.71940     -14.45627     800.67214 x[Slurp]
+                                          14.45627      17.00000       18.03523          +Inf     877.51920 Consumi[Fruttosio]
+
+     7 Consumi[Coloranti]
+                    NU      18.40000        .               -Inf       17.26272      -9.93776     851.25172 Consumi[Fruttosio]
+                                           9.93776      18.40000       18.92470          +Inf     867.76807 Consumi[Conservanti]
+
+     8 Consumi[Conservanti]
+                    BS      12.16844        .33156          -Inf       11.44979     -15.72677     671.18348 Consumi[Coloranti]
+                                            .           12.50000       12.20000      80.91603    1847.17557 Consumi[Estratti_di_erbe]
+
+     9 Consumi[Aromatizzanti]
+                    BS       9.70094        .29906          -Inf        9.08253     -18.27580     685.26121 Consumi[Coloranti]
+                                            .           10.00000        9.80064      34.93333    1201.44000 Consumi[Saccarosio]
+
+    10 z            BS     862.55370    -862.55370          -Inf      859.07103      -1.00000        .      Consumi[Saccarosio]
+                                            .               +Inf      862.55370          +Inf          +Inf
+
+GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    caramelle
+Objective:  z = 862.5537041 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[Dolce]     BS       3.70126       5.00000        .            -7.40148       4.05906     859.07103 Consumi[Saccarosio]
+                                            .               +Inf        5.66713      10.74913     883.83275 Consumi[Coloranti]
+
+     2 x[Delizia]   NL        .            4.00000        .             -.36186          -Inf     863.68815 Consumi[Fruttosio]
+                                          -3.13508          +Inf        2.40021       7.13508     855.02886 x[Dolce]
+
+     3 x[Bacetto]   BS      56.01445       8.00000        .            46.89328       3.09195     587.63218 Consumi[Glucosio]
+                                            .               +Inf       57.85475       9.89246     968.55859 Consumi[Saccarosio]
+
+     4 x[Golosa]    BS      16.57820       5.00000        .            -1.49836       3.73131     841.52113 Consumi[Destrosio]
+                                            .               +Inf       23.30617      11.65388     972.86305 Consumi[Glucosio]
+
+     5 x[Sfizio]    BS      23.73901       6.00000        .            20.00000       5.31701     846.34021 Consumi[Estratti_di_erbe]
+                                            .               +Inf       35.81972       7.74101     903.88344 Consumi[Destrosio]
+
+     6 x[Slurp]     BS      13.26320       7.50000        .           -38.66667       2.83434     800.67214 Consumi[Estratti_di_frutta]
+                                            .               +Inf       16.00000       8.43310     874.92958 Consumi[Estratti_di_erbe]
+
+     7 x[Sweety]    BS      15.80727       4.50000        .            11.93948       1.57792     816.36364 Consumi[Coloranti]
+                                            .               +Inf       25.32354      11.00271     965.34377 Consumi[Estratti_di_frutta]
+
+End of report
+
+
+NOTE
+La prima tabella riguarda i vincoli (row)
+
+Consumi[Fruttosio] è il vincolo sulla quantità utilizzata di fruttosio
+la relativa variabile di slack è in base, come indicato dal BS
+di 9 unità ne consumo solo 8.83401
+la variabile di slack vale quindi .16599
+Marginal, il costo ridotto (aka prezzo ombra) vale 0, perché mi avanza
+fruttosio => ne ho in abbondanza
+Activity range ci dice che il termine noto del vincolo, che vale 9, può scendere 
+fino a 7.80974 oppure può salire fino a 9.88789 senza che la base ottima cambi.
+Se tale termine noto scendesse fino a 7.80974, il valore di z, che comunque
+sarebbe ottimo, scenderebbe fino a 832.51680, e il coefficiente 
+della variabile di slack nella funzione obiettivo varrebbe -3.40014.
+Analogamente, se salisse fino a 9.88789,...
+
+La variabile di slack di Consumi[Saccarosio], invece, è fuori base (NU)
+infatti il vincolo è attivo sull'upper bound (U = Upper)
+di 5 unità ne consumo 5
+la variabile di slack vale quindi 0
+Marginal vale 4.73399. Questo è il "prezzo" a cui potrei venderlo
+
+
+La seconda riguarda le variabili (column)
+
+Del prodotto "Dolce" produco 3.70126
+Il relativo coefficiente vale 5.00000 nella funzione obiettivo,
+infatti quel 5.00000 è il prezzo di vendita di Dolce (ricorda
+anche com'era fatta z: produzione * prezzo di vendita)
+Nota anche che il costo ridotto (Marginal) per le variabili in base è 0, mentre
+per quelle fuori base x[Delizia] è non-0.
+Ad esempio, il costo ridotto di x[Delizia] indica che, per ogni unità prodotta,
+la funzione obiettivo varierebbe di -3.13508 (diminuzione).
+
+Activity range = range in cui può variare la produzione
+Obj coef range = range in cui può variare il prezzo di vendita
+
+###########################################################################
+
+RISPOSTE ALLE DOMANDE
+
+Ottimalità della soluzione
+La soluzione ottima trovata è unica: tutti i costi ridotti
+delle variabili (di slack e non) fuori base sono non-zero.
+
+Tutti i tipi di caramella sono convenienti da produrre? No, vedi Delizia
+
+Nel caso in cui qualche tipo non fosse conveniente, quale dovrebbe 
+essere il suo prezzo di vendita minimo per renderne conveniente 
+la produzione?
+Lo vediamo dal costo ridotto: il prezzo dovrebbe aumentare di 3.13508
+affinché sia conveniente la produzione, arrivando a 7.13508.
+Infatti questo è il limite superiore nel Obj coef range, superato questo,
+è conveniente produrre Delizia.
+
+Viceversa si vuole sapere per tutti i tipi di caramella convenienti 
+per quale oscillazione percentuale del cambio, e quindi del prezzo 
+di vendita, la caramella resta conveniente. Infatti le caramelle 
+sono destinate al mercato estero e le oscillazioni del cambio 
+fanno variare tutti i prezzi simultaneamente della stessa percentuale: 
+qual è la caramella più robusta e quale la caramella meno robusta 
+rispetto alle oscillazioni del cambio?
+Domanda trabocchetto: la variazione del cambio viene applicata a tutti
+i prezzi di vendita! Le proporzioni rimangono identiche.
+Se si varia tutto insieme della stessa percentuale, non cambia assolutamente
+nulla. Diverso invece se varia un prezzo alla volta, lì si può discutere.
+Ad esempio, per la prima caramella, il prezzo di vendita può diminuire
+da 5 a 4.05906 senza che diventi sconveniente produrla. Può quindi sopportare
+circa un 20% di riduzione di prezzo di vendita. Facendo questo discorso
+per ogni caramella, una alla volta, ha senso parlare di robustezza.
+Tutte insieme no!
+
+E' possibile ridurre i costi di approvvigionamento degli 
+ingredienti? Di quanto e con che risparmio?
+La domanda è: posso comprare meno ingredienti senza perdere
+profitti? La risposta è sì: ci sono ingredienti (fruttosio,
+conservanti, aromatizzanti) che compro in quantità superiori
+rispetto a quelle che mi servono realmente, infatti ho uno slack.
+
+​Potendo acquistare ulteriori coloranti e conservanti a prezzo pari 
+a metà di quello corrente, è conveniente aumentare tali risorse? 
+Quanto è convenientee comprarne in più e in che quantità?
+I conservanti non ci servono, già avanzano, non ne servono di 
+ulteriori.
+coloranti 2 euro al kg
+conviene solo fino al primo cambio di base, quindi fino al 18.92470
+lez 7
+

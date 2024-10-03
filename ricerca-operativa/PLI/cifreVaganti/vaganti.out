@@ -1,0 +1,89 @@
+Problem:    cifreVaganti
+Rows:       17
+Columns:    38 (36 integer, 36 binary)
+Non-zeros:  164
+Status:     INTEGER OPTIMAL
+Objective:  0 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Det_n1                      0            -0             = 
+     2 Det_n2                      0            -0             = 
+     3 TutteDiverse[1]
+                                   0                           1 
+     4 TutteDiverse[2]
+                                   1                           1 
+     5 TutteDiverse[3]
+                                   0                           1 
+     6 TutteDiverse[4]
+                                   0                           1 
+     7 TutteDiverse[5]
+                                   1                           1 
+     8 TutteDiverse[6]
+                                   0                           1 
+     9 TutteDiverse[7]
+                                   1                           1 
+    10 TutteDiverse[8]
+                                   1                           1 
+    11 TutteDiverse[9]
+                                   0                           1 
+    12 Assign[0]                   1             1             = 
+    13 Assign[1]                   1             1             = 
+    14 Assign[2]                   1             1             = 
+    15 Assign[3]                   1             1             = 
+    16 Somma                    8612          8612             = 
+    17 CifreSpeciali
+                                   2             2             = 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[0,1]       *              0             0             1 
+     2 x[0,2]       *              0             0             1 
+     3 x[0,3]       *              0             0             1 
+     4 x[0,4]       *              0             0             1 
+     5 x[0,5]       *              1             0             1 
+     6 x[0,6]       *              0             0             1 
+     7 x[0,7]       *              0             0             1 
+     8 x[0,8]       *              0             0             1 
+     9 x[0,9]       *              0             0             1 
+    10 x[1,1]       *              0             0             1 
+    11 x[1,2]       *              0             0             1 
+    12 x[1,3]       *              0             0             1 
+    13 x[1,4]       *              0             0             1 
+    14 x[1,5]       *              0             0             1 
+    15 x[1,6]       *              0             0             1 
+    16 x[1,7]       *              0             0             1 
+    17 x[1,8]       *              1             0             1 
+    18 x[1,9]       *              0             0             1 
+    19 x[2,1]       *              0             0             1 
+    20 x[2,2]       *              0             0             1 
+    21 x[2,3]       *              0             0             1 
+    22 x[2,4]       *              0             0             1 
+    23 x[2,5]       *              0             0             1 
+    24 x[2,6]       *              0             0             1 
+    25 x[2,7]       *              1             0             1 
+    26 x[2,8]       *              0             0             1 
+    27 x[2,9]       *              0             0             1 
+    28 x[3,1]       *              0             0             1 
+    29 x[3,2]       *              1             0             1 
+    30 x[3,3]       *              0             0             1 
+    31 x[3,4]       *              0             0             1 
+    32 x[3,5]       *              0             0             1 
+    33 x[3,6]       *              0             0             1 
+    34 x[3,7]       *              0             0             1 
+    35 x[3,8]       *              0             0             1 
+    36 x[3,9]       *              0             0             1 
+    37 n1                       2785                             
+    38 n2                       5827                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
