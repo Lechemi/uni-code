@@ -1,0 +1,9 @@
+Fare un server veramente concorrente significherebbe che anche nel mezzo di un'operazione del client 1 (ad esempio
+quando vengono chiesti gli operandi) può avvenire il timeout e si passa al client 2, permettendo però
+al client 1 di riprendere da dov'era rimasto, ossia all'inserimento degli operandi.
+
+In questo caso, per non complicare le cose, assumo che ogni operazione matematica sia atomica; ossia: dal momento
+in cui il client invia il numero di operandi al momento in cui decide se chiudere o no la connessione, non ci sono
+interruzioni.
+Rimane comunque il vantaggio che, se un client vuole rimanere connesso ma al momento non ha operazioni da svolgere,
+può rimanere connesso senza essere servito. Poi quando ne ha bisogno invia gli operandi e parte l'operazione atomica.

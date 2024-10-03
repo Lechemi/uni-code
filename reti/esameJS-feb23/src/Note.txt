@@ -1,0 +1,5 @@
+Il server può ricevere due tipi di messaggi:
+- ID:Name per identificarsi come stadio o come spettatore; Alla ricezione il server controlla che non ci sia già un altro
+con lo stesso ID e se tutto è ok lo aggiunge a una mappa Name->SocketAddress
+- REQ:Name:data per fare una richiesta; Alla ricezione il server controlla che sia un utente identificato e controlla anche
+il tipo di utente (perché stadio fa richieste diverse da spect)

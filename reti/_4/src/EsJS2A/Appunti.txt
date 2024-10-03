@@ -1,0 +1,9 @@
+Per risolvere eventuali confusioni tra getInputStream e getOutputStream chiamati sulle socket del server o del client.
+Secondo me i nomi delle istanze di Socket scelti dalla prof non sono espressivi.
+Io ho scelto di usare clientSide e serverSide.
+Immagina proprio un canale che collega server e client:
+- serverSide è la parte del canale lato server
+- clientSide è la parte del canale lato client
+Così quando fai, ad esempio, clientSide.getOutputStream() sai che stai ottenendo lo stream che esce dal lato client,
+quindi che va verso il server.
+Client tratta solo clientSide e Server tratta solo serverSide.
