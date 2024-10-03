@@ -1,0 +1,52 @@
+interface MultiSet<E> extends Iterable<E> {
+  int add(E e);
+  int remove(Object o);
+  default boolean contains(Object o);
+  int multiplicity(Object o);
+  int size();
+  MultiSet<E> union(MultiSet<? extends E> o);
+  MultiSet<E> intersection(MultiSet<? extends E> o);
+}
+
+prima implementazione:
+class MapMultiSet<E>
+{
+    mutabile
+    mappa che associa ad ogni oggetto la sua molteplicità
+
+    costruttore: crea il multiset vuoto
+
+    size fa scorrere le entry della mappa e restituisce la somma delle cardinalità
+
+    union prende la molteplicità di o1 da this, la molteplicità di o1 da other e mette in result la maggiore
+    
+    intersection prende la molteplicità di o1 da this, la molteplicità di o1 
+    da other e mette in result la minore (non mette niente se la minore è 0)
+}
+
+seconda implementazione: 
+ListMultiSet<E>
+{
+    mutabile
+    classe interna privata statica Elemento<T>, che è praticamente un record
+    che associa ad ogni Elemento<T> la sua molteplicità nel MultiSet
+    {
+        stato: molteplicità dell'elemento, mutabile ovviamente
+    }
+
+    STATO: Set<Elemento> che non contiene ripetizioni
+
+    costruttore: crea il set vuoto
+
+    add/remove => modifico la molteplicità dell'elemento desiderato
+    devo prima ottenerlo questo elemento, come faccio? faccio scorrere gli elementi con l'iterator
+    stessa cosa per multiplicity
+
+    penso sia utle avere un metodo privato che restituisce l'elemento di set dato un oggetto (basandosi su equals)
+}
+
+
+
+
+DUBBI:
+devo controllare che E sia di un tipo compatibile?

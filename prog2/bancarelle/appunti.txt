@@ -1,0 +1,62 @@
+
+Acquisto ha un metodo effettua() che effettua l'acquisto:
+- toglie i giocattoli comprati dalle bancarelle
+- aggiunge i giocattoli comprati al compratore
+- toglie i soldi al compratore
+- aggiunge i soldi alle bancarelle
+
+
+Inventario
+{
+    Riguardo a rimuoviGiocattolo: non tratto il caso in cui voglio togliere più giocattoli di quelli
+    che ci sono come se fosse una situazione eccezionale. Mi ispiro a remove di List (ma senza restituire t/f)
+
+}
+
+InventarioConPrezzi
+{
+    Da inventario cambia solo che, per ogni oggetto ho, oltre alla quantità, un Listino.
+}
+
+
+Listino
+{
+    A me sembra più ragionevole creare Listino come una classe astratta, che ha come 
+    attributo il prezzo unitario del giocattolo, ma vabbé facciamola come interfaccia.
+    Nel costruttore di ogni politica di prezzo, passo il prezzo unitario (che fa parte dello stato).
+    poi ho un metodo calcolaPrezzo che prende in input la quantità che voglio comprare e 
+    calcola il prezzo finale adottando la politica di prezzo relativa alla classe concreta.
+}
+
+Acquisto 
+{
+    può essere utilizzata anche "all'esterno", quindi devo fare i controlli per verificare se l'acquisto
+    è valido.
+
+    prezzoTotale deve essere sempre minore o uguale di compratore.budget, posso dirlo nella RI?
+    stessa cosa per le quantità richieste dalle varie bancarelle, che devono essere valide
+}
+
+
+
+
+
+
+
+
+
+
+
+DUBBI CHE SORGONO GUARDANDO LA SOLUZIONE:
+- nel metodo rimuoviGiocattolo di Inventario, perché il santini solleva un'eccezione se provo a rimuovere
+più dei giocattoli presenti? Io ricondurrei la situazione al caso "rimozione di un elemento da una lista",
+che non solleva eccezioni se provo a rimuovere un elemento che non c'è.
+- implementare i listini come ha fatto il santini consente di avere una sola politica 
+di prezzo per l'intero listino. Non credo sia una cosa desiderabile.
+
+COSA AVREI FATTO DIVERSAMENTE 
+- Avrei separato, come il prof, il listino dall'inventario. Per come ho fatto io, se un elemento viene
+rimosso dall'inventario con prezzi, viene rimosso anche il suo prezzo (e relativa politica). Ma il prezzo
+in realtà dovrebbe continuare ad esistere anche se la quantità di giocattolo è 0. Nota che non ha senso
+avere l'interfaccia Listino, perché serve solo se si consente di avere una sola politica 
+di prezzo per l'intero listino concreto, cosa che non voglio.

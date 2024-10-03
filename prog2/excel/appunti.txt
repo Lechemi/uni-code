@@ -1,0 +1,38 @@
+classe FoglioDiCalcolo {
+
+    stato: mappa da Indirizzo a Cella
+
+    get(Indirizzo i) -> restituisce null se a i non c'è niente; cella.contenuto() altrimenti
+    set(Indirizzo i, Contenuto c) -> crea una nuova cella se non c'è, cambia il contenuto se c'è
+}
+
+Indirizzo {
+    int riga
+    String colonna
+
+    metodi per gestire gli indirizzi...
+}
+
+il contenuto può essere: 
+- un valore intero
+- una List<Indirizzo> e un operatore
+
+da fare: solleva RiferimentoVuotoException a livello di Operazione se una get restituisce null.
+
+Operandi {
+    o1, o2 Indirizzo
+    iteratore astratto
+}
+
+Coppia extends Operandi {
+    iteratore restituisce solo o1 e o2
+}
+
+Range extends Operandi {
+    iteratore (sofisticato) restituisce tutti gli indirizzi tra o1 e o2
+}
+
+
+bisogna specificare anche enum?
+posso riferirmi alle variabili col loro nome nelle eccezioni?
+posso riferirmi a FoglioDiCalcolo.this nella AF di CellaFormula?

@@ -1,0 +1,61 @@
+record Posizione {
+    riga, colonna
+}
+
+enum Esito {
+    stati possibili: 
+    colpito
+    colpito e affondato
+    mancato
+}
+
+class Nave {
+    orientamento
+    Posizione
+    array booleano per stato della nave
+    boolean affondata
+
+    public affondata()
+
+    colpisci(Posizione) -> uso posizione (passata per arg) e orientamento per modificare la posizione 
+    giusta dell'array booleano e controllo se questa mossa ha affondato la nave (nel caso aggiorno la relativa variabile)
+
+    stato(Posizione) -> restituisce lo stato della nave in quella posizione (facile se affondata)
+}
+
+classe GrigliaFlotta {
+    Mappa da posizione a nave (mappa molti a uno)
+
+    posiziona(Posizione, tipo, orientamento) -> costruisce una nave avente quelle caratteristiche, 
+    crea dei mapping dalle posizioni occupate dalla nave (calcolabili), alla nave appena costruita
+
+    aggiorna(Posizione) -> se a Posizione corrisponde una nave, chiamo il metodo colpisci(Posizione) della nave e controllo poi
+    se è stata affondata 
+    questo metodo restituisce un Esito
+}
+
+classe GrigliaStrategica {
+    mappa da posizione a Esito
+
+    aggiorna(Posizione, Esito)
+}
+
+classe Giocatore {
+    GrigliaFlotta, GrigliaStrategica
+
+    attacca(Posizione, avversario) -> chiama la funzione riceviAttacco(Posizione) dell'avversario e aggiorna la griglia strategica
+    riceviAttacco(Posizione) -> aggiorna la griglia della flotta e restituisce l'esito
+}
+
+classe Osservatore {
+    l'osservatore riceve in input le stringhe da convertire in giocatori
+    poi riceve in input le stringhe da convertire in mosse
+}
+
+per la griglia della flotta: si potrebbe anche fare che lo stato è solo la lista di navi
+poi c'è un metodo Nave trovaNave(posizione CR) -> compone prima una lista delle navi che si trovano
+sulla colonna C, poi da quella lista trova quella che si trova anche sulla riga R 
+(non mi sembra un metodo drasticamente migliore del mio tho, nel mio trovare una nave è molto più facile,
+ma è più difficile posizionarla)
+
+specificare griglie

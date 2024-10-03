@@ -1,0 +1,95 @@
+PIASTRELLA - CLASSE ASTRATTA 
+{
+    superficie 
+    costo unitario
+}
+
+PIASTRELLA TRIANGOLARE
+
+PIASTRELLA RETTANGOLARE
+
+PIASTRELLA QUADRATA
+
+
+PAVIMENTAZIONE 
+{
+    superficie
+    costo totale
+}
+
+PavimenazioneSingola
+{
+    data da un insieme di PIASTRELLA
+}
+
+PavimentazioneComposta
+{
+    data da un insieme di pavimentazioni
+}
+
+
+
+classe astratta Piastrella che ha come stato comune il costo unitario, specificato in costruzione
+classi concrete PiastrellaTriangolare, PiastrellaRettangolare,... che prendono nel costruttore 
+base e altezza, o diagonali,...
+sempre nel costruttore fiene calcolata la superficie della piastrella (final)
+
+classe astratta Pavimentazione, che può essere estesa con 
+PavimentazioneComposta, fatta da altre pavimentazioni (composte o singole)
+PavimentazioneSingola, fatta da piastrelle
+
+Piastrella [astratta]
+{
+    public final int costoUnitario
+
+    Piastrella(final int costoU)
+
+    abstract superficie()
+
+    equals, hashcode
+}
+
+PiastrellaQuadrata
+{
+    public final superficie
+    private final lato
+
+    PiastrellaQuadrata(final int costoU, final int lato)
+
+    superficie() {
+        lato * lato;
+    }
+}
+
+
+Pavimentazione [astratta]
+{
+    superficie()
+
+    costoTotale()
+}
+
+
+
+interfaccia Pavimento {
+    costo()
+
+    superficie()
+}
+
+Piastrella implements Pavimento
+Pavimentazione<Pavimento> implements Pavimento
+
+Pavimentazione
+
+
+
+
+nota
+quando ho degli attributi immutabili che però sono diversi per ciascuna sottoclasse,
+devo metterli nella superclasse come metodi get.
+
+Puoi anche usare una mappa 
+SE E SOLO SE:
+- non ti importa l'ordine
+- non ti interessano elementi ripetuti

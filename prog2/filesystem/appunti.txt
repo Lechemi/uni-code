@@ -1,0 +1,107 @@
+FILESYSTEM 
+{
+    classe immutabile
+    stato = root (Directory) [final]
+
+
+    - Entry entryFromAbsolutePath(final Path absolutePath)
+
+    - public void createDirectoryAt(final Path absolutePath)
+
+    - void createFileAt(final Path absolutePath, final int d) throws IllegalArgumentException
+
+    - List<Entry> dirContent(final Path absolutePath)
+
+    - int sizeFromPath(final Path absolutePath)
+
+
+
+    tutti questi metodi propagano l'eccezione controllata FileNotFoundException, che viene sollevata
+    a livello di Directory, se provo ad accedere ad una Entry che non è contenuta nella dir corrente.
+    l'eccezione viene poi try-catchata dalla Shell.
+
+    I metodi createDirectoryAt e createFileAt possono anche propagare FileAlreadyExistsException, 
+    sempre sollevata a livello di Directory.
+}
+
+PATH 
+{
+    classe immutabile
+
+    costante separator (esempio: "/")
+    stato = List<String> entryNames [final]
+            private final boolean isAbsolute
+
+    costruttore Path(final String p) che, data la stringa del tipo "a/b/c" costruisce il Path e specifica se è assoluto
+    il costruttore può sollevare l'eccezione controllata InvalidPathException, se la stringa passata come
+    argomento non è convertibile ad una lista di stringhe.
+
+    public Iterator<String> entries() che permette di iterare sugli elementi 
+
+}
+
+ENTRY
+{
+    classe astratta
+
+    stato: private final String name
+
+    costruttore Entry(final String n)
+
+    getName()
+
+    equals se hanno lo stesso nome 
+
+    FILE 
+    {
+        immutabile
+        stato: public final dimensione
+
+        costruttore che prende anche la dimensione
+
+        due file sono equals se hanno anche la stessa dimensione
+    }
+
+    DIRECTORY 
+    {
+        mutabile 
+        stato: private final List<Entry> children = new arraylist
+               private final Directory parent 
+
+        public Directory(final Directory parent)
+
+        dimensione() che è un po' più complicata di quella di File
+
+        public boolean contains()
+
+        public Entry entryFromName(final String name) throws FileNotFoundException
+            restituisce la entry dato il nome
+
+        public void addEntry(final Entry e) throws FileAlreadyExistsException
+
+        public Iterator<Entry> children()
+
+    }
+}
+
+SHELL 
+{
+    mutabile
+    stato: private final FileSystem fs
+           private currentDirectory Directory
+
+
+    - private List<Entry> ls(final Path absolutePath) => se path è nullo, uso la dir corrente
+
+    - private int size come ls
+
+    - private void mkDir(final Path p) usa createDirectoryAt e solleva le stesse eccezioni controllate
+
+    - private void mkFile(final Path p, dimensione) usa createFileAt e solleva le stesse eccezioni controllate
+
+    private void cd(final Path p) se path è nullo
+}
+
+
+
+dubbio: col metodo root() espongo la radice a modifiche non desiderabili?

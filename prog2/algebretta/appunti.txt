@@ -1,0 +1,39 @@
+QUESTIONE METODI PIÙ E PER
+
+1) ha senso che io restituisca un'implementazione diversa in base al risultato?
+perché dovrei?
+perché, per esempio, se il risultato è una matrice nulla, posso restituire una MatriceNulla, 
+semplificando notevolmente le operazioni che si faranno in futuro con questo risultato.
+perché non dovrei?
+perché così l'utilizzatore non sa che implementazione sta maneggiando e non sa come gestirla
+se l'utilizzatore non sa di avere tra le mani una MatriceNulla, si comporta come se fosse generica,
+chiamando metodi in maniera inefficiente (esempio m.più(matriceNulla) al posto che matriceNulla.più(m))
+IDEALMENTE l'utilizzatore dovrebbe sbattersene di che implementazione ha tra le mani, a lui basta
+avere tra le mani una matrice. INVECE NO: quando si hanno diverse implementazioni, è l'utilizzatore 
+che deve scegliere quella migliore!!
+Quindi è lui che deve preoccuparsi di sapere che implementazione sta maneggiando e come usarla al meglio
+Una volta che io gli metto a disposizione metodi per sapere che tipo di matrice ha tra le mani,
+è lui che deve comportarsi di conseguenza, scegliendo l'implementazione migliore per i suoi scopi
+esempio: metodo isNull() (di default anche) che nella matrice generica controlla che siano tutti zeri, mentre nella MatriceNulla
+restituisce semplicemente true.
+=>
+quindi NON ha senso restituire una implementazione diversa in base al risultato, anche perché così 
+la sottoclasse dipende dalle altre sottoclassi, mai una cosa desiderabile.
+
+
+
+2) ha senso che io svolga l'operazione in modo diverso in base alle due matrici?
+sì
+con la mia implementazione corrente, mi preoccupo solo di this, e l'altra matrice viene trattata 
+sempre allo stesso modo.
+ma se l'altra matrice fosse particolare?
+esempio: ho tra le mani una matrice generica m e faccio m.più(matrice nulla).
+con la mia implementazione non ottimizzo niente.
+ma a quel punto perché il chiamante non fa il contrario, ossia: matriceNulla.più(m) ???
+perché il chiamante non sa di avere a che fare con una matrice nulla, lui sta solo facendo m.più(matrice a caso)
+come fa il chiamante a non sapere di avere tra le mani una matrice nulla? 
+perché magari questa è il risultato di un'operazione che coinvolgeva matrici generiche
+però questo accade solo se io restituisco un'implementazione diversa in base al risultato.
+abbiamo visto nel punto 1 che questa cosa non ha senso di esistere.
+=> l'utilizzatore sa sempre che implementazione ha tra le mani => non ha senso che sia io programmatore a preoccuparmi
+di come fa le cose l'utilizzatore.

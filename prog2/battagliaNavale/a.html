@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>Testo</title>
+<style>
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1:hover .anchor .octicon-link:before,
+.markdown-body h2:hover .anchor .octicon-link:before,
+.markdown-body h3:hover .anchor .octicon-link:before,
+.markdown-body h4:hover .anchor .octicon-link:before,
+.markdown-body h5:hover .anchor .octicon-link:before,
+.markdown-body h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: initial;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr:after,
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-top: 8px!important;
+  margin-bottom: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  color: #fafbfc;
+  background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+  color: #fafbfc;
+  background-color: #d73a49;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: 700;
+  color: #22863a;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: 700;
+  color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: #24292e;
+}
+
+.markdown-body .pl-mb {
+  font-weight: 700;
+  color: #24292e;
+}
+
+.markdown-body .pl-md {
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+  color: #e36209;
+  background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+  color: #f6f8fa;
+  background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+  font-weight: 700;
+  color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: #032f62;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+}
+
+.markdown-body .my-2 {
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.markdown-body:after,
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body details,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: .25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  padding-bottom: .3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  font-size: .85em;
+  color: #6a737d;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: initial;
+  background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
+
+.markdown-body .commit-tease-sha {
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 90%;
+  color: #444d56;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+
+.markdown-body .blob-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  width: 1%;
+  min-width: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(27,31,35,.3);
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  overflow: visible;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+  color: #24292e;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+/* md2html specific */
+.markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+code {
+  white-space: pre-wrap !important;
+  }
+</style></head>
+<h1>Battaglia navale</h1>
+<h2>Descrizione</h2>
+<p>Scopo della prova è progettare e implementare una gerarchia di oggetti utili a
+un <em>osservatore</em> che voglia tener traccia dello svolgimento di una partita del gioco
+<em>battaglia navale</em>.</p>
+<p>Per portare a termine il lavoro dovrà decidere quali classi (concrete o
+astratte) e quali interfacce implementare. Per ciascuna di esse <strong>dovrà
+descrivere</strong> (preferibilmente in formato Javadoc, ma comunque solo attraverso
+commenti presenti nel codice) le scelte relative alla <strong>rappresentazione</strong> dello
+stato (con particolare riferimento all'<em>invariante di rappresentazione</em> e alla
+<em>funzione di astrazione</em>) e ai <strong>metodi</strong> (con particolare riferimento a
+<em>pre/post-condizioni</em> ed <em>effetti collaterali</em>, soffermandosi a illustrare le
+ragioni della <em>correttezza</em> solo per le implementazioni che riterrà più
+critiche). Osservi che l'esito di questa prova, che le consentirà di accedere o
+meno all'orale, si baserà tanto su questa documentazione quanto sul codice
+sorgente.</p>
+<p>Presti particolare attenzione agli <em>errori di compilazione</em>: il contenuto dei
+file che il compilatore si rifiuta di compilare <em>non sarà affatto esaminato</em>; se
+riscontrasse errori di compilazione che non è in grado di correggere, valuti la
+possibilità di racchiudere le porzioni di codice che li causano all'interno di
+commenti. Resta inteso che tale codice commentato non sarà valutato.</p>
+<h3>Il gioco</h3>
+<p>Nel gioco della <em>battaglia navale</em> due giocatori dispongono, ciascuno di
+nascosto dall'altro, un numero prestabilito di navi su uno spazio
+bidimensionale a coordinate intere; ciascuna nave occupa un dato numero di
+posizioni adiacenti, in orizzontale o verticale. Quindi, ciascun giocatore tenta
+a turno, di indovinare le posizioni occupate dalle navi dell'avversario, il quale
+è tenuto, di volta in volta, a dichiarare se la posizione attaccata è occupata o
+meno da una delle sue navi (e, nel caso in cui tutte le posizioni occupate dall'ultima
+nave attaccata siano state colpite, a dichiararne l'affondamento). Vince chi
+per primo affonda tutte le navi dell'avversario.</p>
+<p>Lo spazio di gioco ha cento <strong>posizioni</strong> organizzate in dieci colonne (indicate
+con le lettere dalla <code>A</code> alla <code>J</code>) e dieci righe (indicate dalle cifre da <code>0</code> a
+<code>9</code>).</p>
+<p>Le navi possono essere di diversi <strong>tipi</strong>, ciascuno dei quali è identificato
+dalla prima lettera maiuscola del suo tipo e da una <em>lunghezza</em>; si assuma che i
+possibili tipi siano:</p>
+<ul>
+<li><code>P</code>ortaerei, lunga 8 posizioni,</li>
+<li><code>F</code>regata, lunga 7 posizioni,</li>
+<li><code>S</code>ottomarino, lungo 5 posizioni,</li>
+<li><code>C</code>acciamine, lunga 2 posizioni.</li>
+</ul>
+<p>Ogni <strong>nave</strong>, di <em>tipo</em> assegnato, è quindi disposta a partire da una
+<em>posizione</em> dello spazio di gioco e con un dato <em>orientamento</em> (verticale, o
+orizzontale). Al fine di tener traccia dello stato del gioco, ogni nave è
+inoltre in grado di memorizzare i danni subiti (ossia quali delle posizioni che
+occupa sono state <em>colpite</em> dal nemico) e, nel caso, determinare se sia stata
+<em>affondata</em>. Posizione, tipo e orientamento di una nave possono essere indicati
+da una stringa, ad esempio <code>C:B4:O</code> indica un <code>C</code>acciamine la cui prima
+posizione occupata è <code>B4</code> ed è disposto in <code>O</code>rizzontale, per cui, essendo
+lungo 2, occuperà le posizioni <code>B4</code> e <code>B5</code>.</p>
+<p>Lo stato di ciascun <strong>giocatore</strong> è rappresentato da due griglie che contengono
+informazioni sullo spazio di gioco proprio e dell'avversario. La prima è la
+<strong>griglia della flotta</strong> che memorizza le navi come disposte dal giocatore e può
+essere utilizzata sia per tener traccia dei danni complessivamente subiti, che
+per poter comunicare all'avversario l'esito dei suoi attacchi. Questa griglia
+può essere descritta con una stringa, ad esempio</p>
+<pre><code>S~~~~~~CC~
+S~~C~~~~~~
+S~~C~~~~~~
+S~~~~SSSSS
+S~~~~~~~~~
+~~~~~~~~~~
+~~~~~~~~~~
+~~~~~SSSSS
+~~~~~~~~~~
+~~~~~~~~~~
+</code></pre>
+<p>corrisponde alla griglia in cui sono state disposte le navi <code>S:F3:O</code>, <code>S:F7:O</code>,
+<code>S:A0:V</code>, <code>C:H0:O</code> e <code>C:D1:V</code> (a cui non sono ancora stati inferti attacchi).</p>
+<p>La seconda è la <strong>griglia strategica</strong> che, viceversa, tiene traccia dell'esito
+sulla flotta avversaria degli attacchi effettuati dal giocatore. Anche questa
+griglia può essere descritta con una stringa, ad esempio</p>
+<pre><code>~~~~~~~~~~
+~~~*~~~~~~
+~~~#~~~~~~
+~~~~~~*~*~
+~~~~~~.~~~
+~~~~~~~~~~
+~~~~~~~~~~
+~~~~~~~~~~
+~~~~~~~~~~
+~~~~~~~~~~
+</code></pre>
+<p>corrisponde alla griglia dell'avversario che ha attaccato le posizioni <code>D1</code>,
+<code>D2</code>, <code>G3</code>, <code>G4</code> e <code>I3</code> del giocatore la cui flotta è stata mostrata in
+precedenza (affondando il <code>C</code>acciamine in <code>V</code>eritcale e colpendo due volte il
+<code>S</code>ottomarino in riga 3). Il colpo mancato <code>G4</code> è indicato con <code>.</code>,  il secondo
+colpo sulla colonna <code>D</code> è rappresentato come <code>#</code> perché è il colpo che ha
+causato l'affondamento, mentre in generale viene usato <code>*</code> per indicare le
+posizioni in cui è stata colpita una nave. Dopo questa sequenza di attacchi, la
+griglia della flotta del giocatore è descritta dalla stringa</p>
+<pre><code>S~~~~~~CC~
+S~~#~~~~~~
+S~~#~~~~~~
+S~~~~S*S*S
+S~~~~~~~~~
+~~~~~~~~~~
+~~~~~~~~~~
+~~~~~SSSSS
+~~~~~~~~~~
+~~~~~~~~~~
+</code></pre>
+<p>Si osservi che il <code>C</code>acciamine affondato è rappresentato da <code>#</code> anche nella
+prima posizione: per il giocatore (che conosce le sue navi) è infatti più
+semplice renderne omogenea la rappresentazione.</p>
+<p>L'<strong>osservatore</strong> svolge il suo ruolo ricevendo, per ciascun giocatore, l'elenco
+di navi (con la rispettiva posizione) della sua flotta e l'elenco completo delle
+mosse che ha giocato. Con tali informazioni è in grado di produrre la sequenza
+delle quattro griglie di gioco (due per avversario). Ad esempio, se le navi e
+mosse del primo giocatore fossero rispettivamente</p>
+<pre><code>P:C3:O,F:A2:O,F:B5:O,S:E0:O,S:A7:O,S:F1:O,C:D8:O,C:C6:O,C:G4:O,C:B4:O
+
+F8,G7,G9,J0,G8,H1,E1,E2,F0,I4,B6,F3,E8,A0,H4,J9,C7,E6,C6,D9,C1,I2,A5,F7,D5,F1,H6,C2,H8,H2
+</code></pre>
+<p>mentre quelle del secondo fossero rispettivamente</p>
+<pre><code>P:F0:V,F:G2:V,F:E2:V,S:D0:V,S:C1:V,S:I4:V,C:B7:O,C:I0:O,C:B9:O,C:A2:V
+
+J8,F8,G4,H9,E4,B2,C6,H5,B9,G6,H0,A0,E0,J0,A6,J9,H7,D0,C4,H6,D8,E3,H4,A1,G8,D2,F4,D1,G5,H2
+</code></pre>
+<p>gli ultimi tre gruppi della sequenza di griglie di gioco sarebbero</p>
+<pre><code>~~~~*SS*S~ - .~~~~*~~~* | ~~~S~*~~C* - .~~.*~~*~.
+~~~~~SSSSS - ~~*~.*~.~~ | ~~*S~*~~~~ - .~~.~~~~~~
+F*F*FFF~~~ - ~~*~*~~~.~ | C~*S*PF~~~ - ~*~*~~~~~~
+~~PP*PPPPP - ~~~~~*~~~~ | C~SSF*F~~~ - ~~~~*~~~~~
+~C*~~~##~~ - ~~~~~~~.*~ | ~~SSFPF~*~ - ~~*~..*#~~
+~FFFFFF*~~ - .~~.~~~~~~ | ~~S~FPF~S~ - ~~~~~~~*~~
+~~*C~~~~~~ - ~..~*~~.~~ | ~~~~*PF~S~ - .~*~~~..~~
+SSSSS~~~~~ - ~~*~~**~~~ | ~C*~F**~S~ - ~~~~~~~.~~
+~~~*C~~~~~ - ~~~~*.*~~~ | ~~~~*~*~S~ - ~~~*~..~~.
+~~~~~~~~~~ - ~~~.~~.~~. | ~CC~~~~~~~ - ~.~~~~~.~.
+
+~~~~*SS*S~ - .~~~~*~~~* | ~~~S~*~~C* - .~~.*~~*~.
+~~~~~SSSSS - ~~*~.*~.~~ | ~~*S~*~~~~ - .~~.~~~~~~
+F*F*FFF~~~ - ~~*~*~~~.~ | C~*S*PF~~~ - ~*~*~~~~~~
+~~PP*PPPPP - ~~~~~*~~~~ | C~SSF*F~~~ - ~~~~*~~~~~
+~C*~~~##~~ - ~~~~~~~.*~ | ~~SSFPF~*~ - ~~*~..*#~~
+~FFFFF**~~ - .~~.~~~~~~ | ~~S~FPF~S~ - ~~~~~~**~~
+~~*C~~~~~~ - ~..~*~~.~~ | ~~~~*PF~S~ - .~*~~~..~~
+SSSSS~~~~~ - ~~*~~**~~~ | ~C*~F**~S~ - ~~~~~~~.~~
+~~~*C~~~~~ - ~~~~*.*.~~ | ~~~~*~*~S~ - ~~~*~..~~.
+~~~~~~~~~~ - ~~~.~~.~~. | ~CC~~~~~~~ - ~.~~~~~.~.
+
+~~~~*SS*S~ - .~~~~*~~~* | ~~~S~*~~C* - .~~.*~~*~.
+~~~~~SSSSS - ~~*~.*~.~~ | ~~*S~*~~~~ - .~~.~~~~~~
+F*F*FFF~~~ - ~~*~*~~..~ | C~*S*PF~~~ - ~*~*~~~.~~
+~~PP*PPPPP - ~~~~~*~~~~ | C~SSF*F~~~ - ~~~~*~~~~~
+~C*~~~##~~ - ~~~~~~~.*~ | ~~SSFPF~*~ - ~~*~..*#~~
+~FFFFF**~~ - .~~.~~~~~~ | ~~S~FPF~S~ - ~~~~~~**~~
+~~*C~~~~~~ - ~..~*~~.~~ | ~~~~*PF~S~ - .~*~~~..~~
+SSSSS~~~~~ - ~~*~~**~~~ | ~C*~F**~S~ - ~~~~~~~.~~
+~~~*C~~~~~ - ~~~~*.*.~~ | ~~~~*~*~S~ - ~~~*~..~~.
+~~~~~~~~~~ - ~~~.~~.~~. | ~CC~~~~~~~ - ~.~~~~~.~.
+</code></pre>
+<h2>Cosa è necessario implementare</h2>
+<p>Dovrà implementare una gerarchia di oggetti utili a rappresentare le entità
+descritte nella precedente sezione, in grado di esibire il comportamento
+mostrato.</p>
+<p>In particolare, per verificare il suo codice le può essere utile implementare
+una <em>classe di test</em> che, leggendo dal flusso di ingresso quattro linee
+(corrispondenti, rispettivamente, all'elenco di navi e mosse del primo giocatore
+e di navi e mosse del secondo giocatore) emetta l'intera sequenza delle griglie
+di gioco.</p>
+</body>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</html>

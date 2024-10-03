@@ -1,0 +1,27 @@
+classe riga {
+
+    final int lunghezza
+
+    Lista di teramini (ogni teramino ha già in sè le coordinate)
+
+    aggiungi(final Coordinata c) -> aggiunge un teramino alla riga, posizionandolo alla coordinata c
+    se il teramino così posizionato non occupa nessuna posizione della riga, non lo aggiunge
+    se il teramino così posizionato occuperebbe una posizione già occupata da un altro teramino, eccezione
+
+    public boolean piena()
+
+    toString()
+}
+
+classe campodigioco {
+    arrayList di righe (numero di righe aka altezza del campo definito in costruzione)
+
+    cosa devo fare ad ogni istante:
+    applicare l'eventuale traslazione/rotazione (se possibile) al teramino
+    far scendere il teramino di 1
+    provare ad aggiungere il teramino così ottenuto ad ogni riga 
+        - se la riga non contiene del tutto il teramino, easy
+        - se la riga contiene solo quel teramino, easy
+        - se la riga contiene già altri teramini 
+
+}

@@ -1,0 +1,112 @@
+il programma è una lista di interi che viene caricata, intero per intero nelle prime celle della memoria 
+dell'architettura
+
+oltre a queste celle di memoria, ci sono due registri:
+- instruction pointer
+- relative base pointer
+
+quando viene eseguito un programma, parte il loop di run:
+
+run() {
+    fetch();
+    decode();
+    execute();
+}
+
+classi che implementiamo:
+- macchina virtuale
+- memoria
+- registri
+
+interfacce che implementiamo:
+- istruzione
+
+
+
+
+
+
+
+ISTRUZIONI:
+
+(
+    P = parametri
+    P[0] = (primo parametro)
+    P[1] = (secondo parametro)
+    P[2] = (terzo parametro)
+    IP = instruction pointer
+    RBP = relative base pointer
+)
+
+01 -> add           : P[2] := P[0] + P[1]
+02 -> mul           : P[2] := P[0] * P[1]
+03 -> read          : P[0] := input()
+04 -> write         : output(P[0])
+05 -> jump_not_zero : if(P[0] ≠ 0) IP := P[1]
+06 -> jump_if_zero  : if(P[0] = 0) IP := P[1]
+07 -> less_than     : if(P[0] < P[1]) P[2] := 1; else P[2] := 0
+08 -> equals        : if(P[0] = P[1]) P[2] := 1; else P[2] := 0
+09 -> adj_rbp       : RBP := P[0]
+99 -> halt          : arresta l'esecuzione
+
+possiamo suddividere le istruzioni in base alla tipologia
+(
+    - aritmetiche: add, mul, less_than, equals
+    - controllo del flusso di istruzioni: jump_if_zero, jump_not_zero
+    - lettura/scrittura (I/O): read, write
+    - modifica di RBP: adj_rbp
+    - halt
+)
+
+possiamo suddividere le istruzioni in base ad accesso alla memoria o no:
+(
+    - accesso alla memoria: tutte tranne halt
+    - non accesso alla memoria: halt
+)
+
+possiamo suddividere le istruzioni in base alla modifica dei registri o no:
+(
+    - modifica dei registri: jump_not_zero, jump_if_zero, adj_rbp
+    - non modifica dei registri: tutte le altre
+)
+
+un oggetto di tipo Instruction avrà il metodo execute()
+un oggetto di tipo Instruction avrà il metodo isHalting() (termina l'esecuzione o no)
+NB: execute è un comportamento che è diverso per ogni istruzione specifica => Instruction sarà un'interfaccia
+
+GERARCHIA DELLE ISTRUZIONI
+
+Instruction (interfaccia)
+suddividiamo le istruzioni in base all'uso di parametri o meno:
+- ParameterBasedInstruction (classe astratta)
+(
+    hanno parametri
+    isHalting = false
+    possiamo ulteriormente specificare delle istruzioni che, oltre ad avere i parametri, modificano i registri:
+    - ParameterAndRegistersInstruction (classe astratta)
+    (
+        operano sui registri
+        ulteriore suddivisione:
+        - ControlFlowInstruction -> JumpNotZero, JumpIfZero (classi)
+        - RegisterInstruction -> AdjustRBP (classe)
+        - IOInstruction -> Read, Write (classi)
+        - ALInstruction -> Add, Mul, LessThan, Equals (classi)
+    ))
+- Halt (classe)
+
+ogni classe implementa il comportamento execute() in maniera diversa
+
+
+
+
+
+
+
+ACCESS MODE
+
+suppongo di avere un parametro uguale a 42
+
+accesso per:
+0) indirizzamento diretto: il valore che voglio è nella cella di memoria con indice 42
+1) valore: il valore che voglio è 42
+2) indirizzamento indiretto: il valore che voglio è nella cella data da RBP + 42

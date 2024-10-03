@@ -1,0 +1,22 @@
+Durata
+{
+    immutabile
+    public final int sec;
+
+    costruttore che prende final int s
+
+    metodo statico che converte stringa in Durata
+
+    toString 
+
+    somma
+
+    sottrai
+}
+
+
+
+
+
+DUBBI:
+posso riferirmi alle variabili col loro nome nelle eccezioni?
